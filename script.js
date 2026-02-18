@@ -7,6 +7,19 @@ const CHART_COLORS = [
     '#3D5475', '#546E7A', '#D4526E', '#8D5B4C', '#F86624'
 ];
 
+function getBlendedEfficiency(vehicle) {
+    const hwPct = parseInt(document.getElementById('driveMixSlider').value) / 100;
+    const city = vehicle.city !== undefined ? vehicle.city : parseFloat(vehicle.efficiency);
+    const highway = vehicle.highway !== undefined ? vehicle.highway : parseFloat(vehicle.efficiency);
+    return city * (1 - hwPct) + highway * hwPct;
+}
+
+function updateDriveMixLabel() {
+    const val = parseInt(document.getElementById('driveMixSlider').value);
+    const cityPct = 100 - val;
+    document.getElementById('driveMixLabel').textContent = `${cityPct}% City / ${val}% Highway`;
+}
+
 document.getElementById('addVehicleButton').addEventListener('click', function() {
     const gasPrice = parseFloat(document.getElementById('gasPrice').value);
     const electricPrice = parseFloat(document.getElementById('electricPrice').value);
@@ -37,7 +50,7 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
         return;
     }
 
-    let efficiency, type, year, make, model;
+    let efficiency, type, year, make, model, city, highway;
 
     // Vehicle Input Validation and data collection
     if (activeTab === 'automatic') {
@@ -53,8 +66,11 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
         year = yearSelect.value;
         make = makeSelect.value;
         model = modelSelect.value;
-        efficiency = document.getElementById('vehicleEfficiency').value;
         type = document.getElementById('vehicleType').value;
+        const vData = carData[year][make][model];
+        efficiency = vData.comb;
+        city = vData.city;
+        highway = vData.highway;
     } else {
         const vehicleTypeManual = document.getElementById('vehicleTypeManual');
         const vehicleEfficiencyManual = document.getElementById('vehicleEfficiencyManual');
@@ -66,13 +82,15 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
 
         year = 'Select Year';
         make = 'Manual';
-        efficiency = vehicleEfficiencyManual.value;
+        efficiency = parseFloat(vehicleEfficiencyManual.value);
         type = vehicleTypeManual.value;
         manualVehicleCount++;
         model = `Manual Input #${manualVehicleCount}`;
+        city = efficiency;
+        highway = efficiency;
     }
 
-    vehicles.push({ year, make, model, efficiency, type });
+    vehicles.push({ year, make, model, efficiency, type, city, highway });
 
     // Reset input fields
     document.getElementById('year-select').value = 'Select Year';
@@ -106,21 +124,22 @@ function renderVehicleList() {
         const badge = document.createElement('div');
         badge.className = 'mpg-badge';
 
+        const blended = getBlendedEfficiency(vehicle);
         let labelText;
         if (vehicle.type === 'electric') {
-            const evMPG = vehicle.efficiency / (electricPrice / gasPrice);
+            const evMPG = blended / (electricPrice / gasPrice);
             labelText = `${index + 1}. ${displayName}`;
             badge.classList.add('electric');
             const mpgeLine = document.createElement('div');
             mpgeLine.textContent = `${evMPG.toFixed(0)} MPGe`;
             const mikwhLine = document.createElement('div');
             mikwhLine.className = 'badge-sub';
-            mikwhLine.textContent = `${vehicle.efficiency} mi/kWh`;
+            mikwhLine.textContent = `${blended.toFixed(2)} mi/kWh`;
             badge.appendChild(mpgeLine);
             badge.appendChild(mikwhLine);
         } else {
             labelText = `${index + 1}. ${displayName}`;
-            badge.textContent = `${vehicle.efficiency} MPG`;
+            badge.textContent = `${blended.toFixed(1)} MPG`;
             badge.classList.add('gas');
         }
 
@@ -143,6 +162,8 @@ function renderVehicleList() {
                     return;
                 }
                 vehicles[i].efficiency = parsed;
+                vehicles[i].city = parsed;
+                vehicles[i].highway = parsed;
                 renderVehicleList();
                 updateLineChart();
                 updateBarChart();
@@ -193,6 +214,22 @@ function refreshIfVehicles() {
     document.getElementById(id).addEventListener('input', refreshIfVehicles);
 });
 
+document.getElementById('driveMixSlider').addEventListener('input', function() {
+    updateDriveMixLabel();
+    // Update efficiency preview if a model is currently selected
+    if (carData) {
+        const yearSel = document.getElementById('year-select');
+        const makeSel = document.getElementById('make-select');
+        const modelSel = document.getElementById('model-select');
+        if (yearSel.value !== 'Select Year' && makeSel.value !== 'Select Make' && modelSel.value !== 'Select Model') {
+            const vData = carData[yearSel.value][makeSel.value][modelSel.value];
+            const hwPct = parseInt(this.value) / 100;
+            document.getElementById('vehicleEfficiency').value = parseFloat((vData.city * (1 - hwPct) + vData.highway * hwPct).toFixed(4));
+        }
+    }
+    refreshIfVehicles();
+});
+
 document.addEventListener('DOMContentLoaded', function() {
     const yearSelect = document.getElementById('year-select');
     const makeSelect = document.getElementById('make-select');
@@ -236,7 +273,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 const selectedMake = makeSelect.value;
                 const selectedModel = modelSelect.value;
                 const vehicle = data[selectedYear][selectedMake][selectedModel];
-                efficiencyOutput.value = vehicle.comb;
+                const hwPct = parseInt(document.getElementById('driveMixSlider').value) / 100;
+                efficiencyOutput.value = parseFloat((vehicle.city * (1 - hwPct) + vehicle.highway * hwPct).toFixed(4));
                 vehicleType.value = vehicle.fuelType.toLowerCase().includes('electric') ? 'electric' : 'gas';
             });
         })
@@ -253,12 +291,13 @@ function updateLineChart() {
 
     const lineSeries = vehicles.map(function(vehicle) {
         const data = [];
+        const blended = getBlendedEfficiency(vehicle);
         for (let year = 1; year <= yearsOwnership; year++) {
             let cost;
             if (vehicle.type === 'gas') {
-                cost = (milesYear / vehicle.efficiency) * gasPrice * year;
+                cost = (milesYear / blended) * gasPrice * year;
             } else {
-                cost = (milesYear / vehicle.efficiency) * electricPrice * year;
+                cost = (milesYear / blended) * electricPrice * year;
             }
             data.push(Math.round(cost));
         }
@@ -303,11 +342,11 @@ function updateBarChart() {
     const electricPrice = parseFloat(document.getElementById('electricPrice').value);
 
     const vehicleEfficiencies = vehicles.map(function(vehicle) {
-        let efficiency = vehicle.efficiency;
+        const blended = getBlendedEfficiency(vehicle);
         if (vehicle.type === 'electric') {
-            efficiency = (efficiency / (electricPrice / gasPrice)).toFixed(2);
+            return (blended / (electricPrice / gasPrice)).toFixed(2);
         }
-        return efficiency;
+        return blended.toFixed(1);
     });
 
     const labelColors = vehicles.map(function(vehicle) {

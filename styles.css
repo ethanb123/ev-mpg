@@ -274,6 +274,35 @@ input, select, button {
     display: block;
   }
 
+.drive-mix-control {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+.drive-mix-control input[type="range"] {
+    flex: 1;
+    width: auto;
+    display: inline;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.mix-label {
+    white-space: nowrap;
+    font-size: 0.85em;
+    color: #444;
+}
+
+.mix-pct-label {
+    text-align: center;
+    font-size: 0.85em;
+    color: #555;
+    margin-top: 4px;
+}
+
 @media (max-width: 899px) {
     #topbar {
         height: auto;

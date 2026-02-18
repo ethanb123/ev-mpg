@@ -42,6 +42,16 @@
                 <input type="number" id="electricPrice" name="gasPrice" placeholder="e.g., 0.19">
                 <div id="electricPriceTip" class="tooltip">Enter the current price of electricity per kWh in US dollars.</div>
             </div>
+
+            <div class="input-field">
+                <span class="info-icon">Driving Mix</span>
+                <div class="drive-mix-control">
+                    <span class="mix-label">City</span>
+                    <input type="range" id="driveMixSlider" min="0" max="100" value="50">
+                    <span class="mix-label">Highway</span>
+                </div>
+                <div id="driveMixLabel" class="mix-pct-label">50% City / 50% Highway</div>
+            </div>
         </div>
         
         <!-- Usage Box -->
