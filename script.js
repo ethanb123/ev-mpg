@@ -145,6 +145,42 @@ function renderVehicleList() {
 
         const labelSpan = document.createElement('span');
         labelSpan.textContent = labelText;
+
+        if (isManual) {
+            labelSpan.style.cursor = 'pointer';
+            labelSpan.title = 'Click to rename';
+            labelSpan.onclick = (function(i, idx) {
+                return function() {
+                    const nameInput = document.createElement('input');
+                    nameInput.type = 'text';
+                    nameInput.value = vehicles[i].model;
+                    nameInput.style.cssText = 'display:inline;width:auto;margin:0;padding:2px 4px;font-size:inherit;';
+                    labelSpan.textContent = `${idx + 1}. `;
+                    labelSpan.appendChild(nameInput);
+                    nameInput.focus();
+                    nameInput.select();
+
+                    function save() {
+                        const newName = nameInput.value.trim();
+                        if (newName) vehicles[i].model = newName;
+                        renderVehicleList();
+                        updateLineChart();
+                        updateBarChart();
+                    }
+
+                    nameInput.addEventListener('blur', save);
+                    nameInput.addEventListener('keydown', function(e) {
+                        if (e.key === 'Enter') {
+                            nameInput.blur();
+                        } else if (e.key === 'Escape') {
+                            nameInput.removeEventListener('blur', save);
+                            renderVehicleList();
+                        }
+                    });
+                };
+            })(index, index);
+        }
+
         listItem.appendChild(labelSpan);
         listItem.appendChild(badge);
 
