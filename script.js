@@ -408,6 +408,105 @@ function updateBarChart() {
     }]);
 }
 
+// State-level average fuel prices (EIA 2024 data, gas $/gal, electric $/kWh)
+const STATE_PRICES = {
+    AK: { gas: 3.65, electric: 0.24 }, AL: { gas: 2.95, electric: 0.13 },
+    AR: { gas: 2.90, electric: 0.11 }, AZ: { gas: 3.45, electric: 0.13 },
+    CA: { gas: 4.70, electric: 0.27 }, CO: { gas: 3.25, electric: 0.14 },
+    CT: { gas: 3.45, electric: 0.28 }, DC: { gas: 3.30, electric: 0.14 },
+    DE: { gas: 3.05, electric: 0.14 }, FL: { gas: 3.20, electric: 0.14 },
+    GA: { gas: 2.90, electric: 0.13 }, HI: { gas: 4.80, electric: 0.39 },
+    IA: { gas: 3.00, electric: 0.12 }, ID: { gas: 3.35, electric: 0.11 },
+    IL: { gas: 3.50, electric: 0.15 }, IN: { gas: 3.15, electric: 0.14 },
+    KS: { gas: 2.95, electric: 0.13 }, KY: { gas: 2.95, electric: 0.12 },
+    LA: { gas: 2.90, electric: 0.10 }, MA: { gas: 3.25, electric: 0.26 },
+    MD: { gas: 3.15, electric: 0.16 }, ME: { gas: 3.30, electric: 0.22 },
+    MI: { gas: 3.20, electric: 0.17 }, MN: { gas: 3.10, electric: 0.14 },
+    MO: { gas: 2.90, electric: 0.12 }, MS: { gas: 2.85, electric: 0.13 },
+    MT: { gas: 3.25, electric: 0.12 }, NC: { gas: 3.00, electric: 0.12 },
+    ND: { gas: 3.05, electric: 0.12 }, NE: { gas: 3.05, electric: 0.11 },
+    NH: { gas: 3.15, electric: 0.25 }, NJ: { gas: 3.25, electric: 0.18 },
+    NM: { gas: 3.00, electric: 0.14 }, NV: { gas: 3.80, electric: 0.12 },
+    NY: { gas: 3.50, electric: 0.21 }, OH: { gas: 3.15, electric: 0.13 },
+    OK: { gas: 2.85, electric: 0.11 }, OR: { gas: 3.80, electric: 0.12 },
+    PA: { gas: 3.35, electric: 0.16 }, RI: { gas: 3.20, electric: 0.26 },
+    SC: { gas: 2.95, electric: 0.13 }, SD: { gas: 3.10, electric: 0.12 },
+    TN: { gas: 2.95, electric: 0.12 }, TX: { gas: 2.85, electric: 0.13 },
+    UT: { gas: 3.35, electric: 0.11 }, VA: { gas: 3.10, electric: 0.13 },
+    VT: { gas: 3.25, electric: 0.19 }, WA: { gas: 4.00, electric: 0.11 },
+    WI: { gas: 3.10, electric: 0.16 }, WV: { gas: 3.10, electric: 0.12 },
+    WY: { gas: 3.20, electric: 0.10 }
+};
+
+const STATE_NAME_TO_CODE = {
+    'Alabama':'AL','Alaska':'AK','Arizona':'AZ','Arkansas':'AR','California':'CA',
+    'Colorado':'CO','Connecticut':'CT','Delaware':'DE','Florida':'FL','Georgia':'GA',
+    'Hawaii':'HI','Idaho':'ID','Illinois':'IL','Indiana':'IN','Iowa':'IA',
+    'Kansas':'KS','Kentucky':'KY','Louisiana':'LA','Maine':'ME','Maryland':'MD',
+    'Massachusetts':'MA','Michigan':'MI','Minnesota':'MN','Mississippi':'MS','Missouri':'MO',
+    'Montana':'MT','Nebraska':'NE','Nevada':'NV','New Hampshire':'NH','New Jersey':'NJ',
+    'New Mexico':'NM','New York':'NY','North Carolina':'NC','North Dakota':'ND','Ohio':'OH',
+    'Oklahoma':'OK','Oregon':'OR','Pennsylvania':'PA','Rhode Island':'RI','South Carolina':'SC',
+    'South Dakota':'SD','Tennessee':'TN','Texas':'TX','Utah':'UT','Vermont':'VT',
+    'Virginia':'VA','Washington':'WA','West Virginia':'WV','Wisconsin':'WI','Wyoming':'WY',
+    'District of Columbia':'DC'
+};
+
+async function autofillFuelPrices() {
+    const btn = document.getElementById('autofillPricesBtn');
+    btn.textContent = 'Detecting location...';
+    btn.disabled = true;
+
+    function resetBtn(text) {
+        btn.textContent = text;
+        btn.disabled = false;
+    }
+
+    let coords;
+    try {
+        const pos = await new Promise((resolve, reject) =>
+            navigator.geolocation.getCurrentPosition(resolve, reject, { timeout: 10000 })
+        );
+        coords = pos.coords;
+    } catch (e) {
+        resetBtn('Location denied — try again');
+        setTimeout(() => resetBtn('Auto-fill Prices by Location'), 3000);
+        return;
+    }
+
+    let stateCode;
+    try {
+        const resp = await fetch(
+            `https://nominatim.openstreetmap.org/reverse?lat=${coords.latitude}&lon=${coords.longitude}&format=json`,
+            { headers: { 'Accept': 'application/json', 'User-Agent': 'EV-MPG-App/1.0' } }
+        );
+        const geo = await resp.json();
+        const iso = geo.address && geo.address['ISO3166-2-lvl4'];
+        if (iso && iso.startsWith('US-')) {
+            stateCode = iso.slice(3);
+        } else {
+            stateCode = geo.address && STATE_NAME_TO_CODE[geo.address.state];
+        }
+    } catch (e) {
+        resetBtn('Lookup failed — try again');
+        setTimeout(() => resetBtn('Auto-fill Prices by Location'), 3000);
+        return;
+    }
+
+    const prices = stateCode && STATE_PRICES[stateCode];
+    if (!prices) {
+        resetBtn('State not found — try again');
+        setTimeout(() => resetBtn('Auto-fill Prices by Location'), 3000);
+        return;
+    }
+
+    document.getElementById('gasPrice').value = prices.gas;
+    document.getElementById('electricPrice').value = prices.electric;
+    refreshIfVehicles();
+    resetBtn(`Filled for ${stateCode} (2024 avg)`);
+    setTimeout(() => resetBtn('Auto-fill Prices by Location'), 4000);
+}
+
 function showTooltip(id) {
     const tooltip = document.getElementById(id);
     tooltip.style.display = 'block';

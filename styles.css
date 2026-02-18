@@ -164,6 +164,20 @@ input, select, button {
     border-radius: 8px;
 }
 
+#autofillPricesBtn {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+#autofillPricesBtn:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
 #logo {
     width: 12vh;
     height: 12vh;
