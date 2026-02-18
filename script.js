@@ -94,18 +94,26 @@ function renderVehicleList() {
         const isManual = vehicle.year === 'Select Year';
         const displayName = isManual ? vehicle.model : `${vehicle.make} ${vehicle.model}`;
 
+        const badge = document.createElement('div');
+        badge.className = 'mpg-badge';
+
         let labelText;
         if (vehicle.type === 'electric') {
             const evMPG = vehicle.efficiency / (electricPrice / gasPrice);
-            labelText = `${index + 1}. ${displayName} - ${vehicle.efficiency} Mi/KWh (${evMPG.toFixed(2)} MPGe)`;
+            labelText = `${index + 1}. ${displayName}`;
+            badge.textContent = `${evMPG.toFixed(0)} MPGe`;
+            badge.classList.add('electric');
             listItem.style.color = '#00c421';
         } else {
-            labelText = `${index + 1}. ${displayName} - ${vehicle.efficiency} MPG`;
+            labelText = `${index + 1}. ${displayName}`;
+            badge.textContent = `${vehicle.efficiency} MPG`;
+            badge.classList.add('gas');
         }
 
         const labelSpan = document.createElement('span');
         labelSpan.textContent = labelText;
         listItem.appendChild(labelSpan);
+        listItem.appendChild(badge);
 
         const editButton = document.createElement('button');
         editButton.textContent = 'Edit';

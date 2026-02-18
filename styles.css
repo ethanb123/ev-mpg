@@ -110,6 +110,27 @@ input, select, button {
     flex: 1;
 }
 
+.mpg-badge {
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-align: center;
+    min-width: 80px;
+    margin: 0 8px;
+    white-space: nowrap;
+}
+
+.mpg-badge.gas {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.mpg-badge.electric {
+    background-color: #c8f5c8;
+    color: #1a7a1a;
+}
+
 .list-action-btn {
     width: auto;
     padding: 4px 10px;
