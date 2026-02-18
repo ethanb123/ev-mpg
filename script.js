@@ -112,27 +112,15 @@ function renderVehicleList() {
         editButton.className = 'list-action-btn edit-btn';
         editButton.onclick = (function(v, i) {
             return function() {
-                vehicles.splice(i, 1);
-
-                if (v.year !== 'Select Year' && carData) {
-                    // Restore automatic tab with the vehicle's original selections
-                    showTab('automatic');
-                    const yearSel = document.getElementById('year-select');
-                    const makeSel = document.getElementById('make-select');
-                    const modelSel = document.getElementById('model-select');
-                    yearSel.value = v.year;
-                    yearSel.dispatchEvent(new Event('change'));
-                    makeSel.value = v.make;
-                    makeSel.dispatchEvent(new Event('change'));
-                    modelSel.value = v.model;
-                    modelSel.dispatchEvent(new Event('change'));
-                } else {
-                    // Restore manual tab with the vehicle's type and efficiency
-                    showTab('manual');
-                    document.getElementById('vehicleTypeManual').value = v.type;
-                    document.getElementById('vehicleEfficiencyManual').value = v.efficiency;
+                const unit = v.type === 'electric' ? 'Mi/KWh' : 'MPG';
+                const newValue = prompt(`Enter new efficiency for ${displayName} (${unit}):`, v.efficiency);
+                if (newValue === null) return; // user cancelled
+                const parsed = parseFloat(newValue);
+                if (isNaN(parsed) || parsed <= 0) {
+                    alert('Please enter a valid positive number.');
+                    return;
                 }
-
+                vehicles[i].efficiency = parsed;
                 renderVehicleList();
                 updateLineChart();
                 updateBarChart();
