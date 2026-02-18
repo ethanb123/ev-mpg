@@ -101,9 +101,15 @@ function renderVehicleList() {
         if (vehicle.type === 'electric') {
             const evMPG = vehicle.efficiency / (electricPrice / gasPrice);
             labelText = `${index + 1}. ${displayName}`;
-            badge.textContent = `${evMPG.toFixed(0)} MPGe`;
             badge.classList.add('electric');
             listItem.style.color = '#00c421';
+            const mpgeLine = document.createElement('div');
+            mpgeLine.textContent = `${evMPG.toFixed(0)} MPGe`;
+            const mikwhLine = document.createElement('div');
+            mikwhLine.className = 'badge-sub';
+            mikwhLine.textContent = `${vehicle.efficiency} mi/kWh`;
+            badge.appendChild(mpgeLine);
+            badge.appendChild(mikwhLine);
         } else {
             labelText = `${index + 1}. ${displayName}`;
             badge.textContent = `${vehicle.efficiency} MPG`;

@@ -131,6 +131,13 @@ input, select, button {
     color: #1a7a1a;
 }
 
+.badge-sub {
+    font-size: 0.75em;
+    font-weight: normal;
+    opacity: 0.8;
+    margin-top: 2px;
+}
+
 .list-action-btn {
     width: auto;
     padding: 4px 10px;
