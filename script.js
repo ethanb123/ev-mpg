@@ -174,6 +174,17 @@ document.getElementById('vehicleEfficiencyManual').addEventListener('keydown', f
     if (e.key === 'Enter') document.getElementById('addVehicleButton').click();
 });
 
+function refreshIfVehicles() {
+    if (vehicles.length === 0) return;
+    renderVehicleList();
+    updateLineChart();
+    updateBarChart();
+}
+
+['gasPrice', 'electricPrice', 'milesYear', 'yearsOwnership'].forEach(function(id) {
+    document.getElementById(id).addEventListener('input', refreshIfVehicles);
+});
+
 document.addEventListener('DOMContentLoaded', function() {
     const yearSelect = document.getElementById('year-select');
     const makeSelect = document.getElementById('make-select');
