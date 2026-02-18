@@ -170,6 +170,10 @@ function showTab(tab) {
     activeTab = tab;
 }
 
+document.getElementById('vehicleEfficiencyManual').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') document.getElementById('addVehicleButton').click();
+});
+
 document.addEventListener('DOMContentLoaded', function() {
     const yearSelect = document.getElementById('year-select');
     const makeSelect = document.getElementById('make-select');
