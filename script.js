@@ -97,7 +97,7 @@ function renderVehicleList() {
         let labelText;
         if (vehicle.type === 'electric') {
             const evMPG = vehicle.efficiency / (electricPrice / gasPrice);
-            labelText = `${index + 1}. ${displayName} - ${evMPG.toFixed(2)} EV-MPG`;
+            labelText = `${index + 1}. ${displayName} - ${vehicle.efficiency} Mi/KWh (${evMPG.toFixed(2)} MPGe)`;
             listItem.style.color = '#00c421';
         } else {
             labelText = `${index + 1}. ${displayName} - ${vehicle.efficiency} MPG`;
