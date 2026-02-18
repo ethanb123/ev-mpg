@@ -2,6 +2,11 @@ let vehicles = [];
 let manualVehicleCount = 0;
 let carData = null;
 
+const CHART_COLORS = [
+    '#008FFB', '#00E396', '#FEB019', '#FF4560', '#775DD0',
+    '#3D5475', '#546E7A', '#D4526E', '#8D5B4C', '#F86624'
+];
+
 document.getElementById('addVehicleButton').addEventListener('click', function() {
     const gasPrice = parseFloat(document.getElementById('gasPrice').value);
     const electricPrice = parseFloat(document.getElementById('electricPrice').value);
@@ -94,6 +99,10 @@ function renderVehicleList() {
         const isManual = vehicle.year === 'Select Year';
         const displayName = isManual ? vehicle.model : `${vehicle.make} ${vehicle.model}`;
 
+        const color = CHART_COLORS[index % CHART_COLORS.length];
+        listItem.style.border = `2px solid ${color}`;
+        listItem.style.backgroundColor = color + '22';
+
         const badge = document.createElement('div');
         badge.className = 'mpg-badge';
 
@@ -102,7 +111,6 @@ function renderVehicleList() {
             const evMPG = vehicle.efficiency / (electricPrice / gasPrice);
             labelText = `${index + 1}. ${displayName}`;
             badge.classList.add('electric');
-            listItem.style.color = '#00c421';
             const mpgeLine = document.createElement('div');
             mpgeLine.textContent = `${evMPG.toFixed(0)} MPGe`;
             const mikwhLine = document.createElement('div');
@@ -261,6 +269,7 @@ function updateLineChart() {
     });
 
     const lineOptions = {
+        colors: vehicles.map((_, i) => CHART_COLORS[i % CHART_COLORS.length]),
         chart: {
             type: 'line',
             height: '510px'
@@ -301,11 +310,12 @@ function updateBarChart() {
         return efficiency;
     });
 
-    const vehicleColors = vehicles.map(function(vehicle) {
-        return vehicle.type === 'electric' ? '#72b644' : '#000000';
+    const labelColors = vehicles.map(function(vehicle) {
+        return vehicle.type === 'electric' ? '#1a7a1a' : '#000000';
     });
 
     chart.updateOptions({
+        colors: vehicles.map((_, i) => CHART_COLORS[i % CHART_COLORS.length]),
         chart: {
             type: 'bar',
             height: '480px'
@@ -313,7 +323,7 @@ function updateBarChart() {
         xaxis: {
             categories: vehicles.map(v => v.model.split(' ').slice(0, 2).join(' ')),
             labels: {
-                style: { colors: vehicleColors }
+                style: { colors: labelColors }
             }
         }
     });
