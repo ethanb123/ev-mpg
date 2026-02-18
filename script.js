@@ -278,7 +278,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             carData = data;
 
-            for (const year in data) {
+            for (const year of Object.keys(data).sort((a, b) => b - a)) {
                 let option = new Option(year, year);
                 yearSelect.add(option);
             }
