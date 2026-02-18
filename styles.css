@@ -49,10 +49,6 @@ transform: translateY(-50%);
     grid-area: usage;
 }
 
-#vehicle1Box {
-    grid-area: vehicle1;
-}
-
 #vehicle2Box {
     grid-area: vehicle2;
 }
@@ -95,13 +91,44 @@ input, select, button {
     position: relative;
 }
 
-#vehicle2Box button {
+#clearButton {
     position: absolute;
     bottom: 10px;
     right: 10px;
     width: 100px;
     background-color: #269ffb;
     border-radius: 8px;
+}
+
+#vehicleList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#vehicleList li span {
+    flex: 1;
+}
+
+.list-action-btn {
+    width: auto;
+    padding: 4px 10px;
+    margin: 0 0 0 6px;
+    display: inline-block;
+    font-size: 0.85em;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+}
+
+.edit-btn {
+    background-color: #f0a500;
+    color: white;
+}
+
+.remove-btn {
+    background-color: #e74c3c;
+    color: white;
 }
 
 #addVehicleButton {
@@ -218,4 +245,49 @@ input, select, button {
   .input-field:hover .tooltip {
     display: block;
   }
-  
+
+@media (max-width: 899px) {
+    #topbar {
+        height: auto;
+        padding: 15px;
+        width: 95%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #topbar .vertical-center {
+        position: static;
+        transform: none;
+        margin: 5px 0;
+    }
+
+    #topbar h1 {
+        margin-left: 0 !important;
+        font-size: 8vw !important;
+    }
+
+    #topbar p {
+        margin-left: 0 !important;
+        font-size: 3.5vw !important;
+        width: 100% !important;
+    }
+
+    #topbar img {
+        margin-left: 0 !important;
+        width: 15vw !important;
+        height: 15vw !important;
+    }
+
+    #container {
+        width: 95%;
+        margin: auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #charts {
+        display: flex;
+        flex-direction: column;
+    }
+}
