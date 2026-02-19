@@ -952,7 +952,7 @@
         "comb": 17.97
       },
       "Regal": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.8,
         "highway": 31.1,
         "comb": 23.67
@@ -990,31 +990,31 @@
         "comb": 17.97
       },
       "Escalade 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.06,
         "highway": 18.08,
         "comb": 15.62
       },
       "Escalade AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.0,
         "highway": 17.53,
         "comb": 15.33
       },
       "Escalade ESV 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.06,
         "highway": 18.08,
         "comb": 15.62
       },
       "Escalade ESV AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.59,
         "highway": 17.64,
         "comb": 14.45
       },
       "Escalade Ext AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.59,
         "highway": 17.64,
         "comb": 14.45
@@ -1070,13 +1070,13 @@
     },
     "Chevrolet": {
       "Avalanche 1500 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.82,
         "highway": 21.18,
         "comb": 17.13
       },
       "Avalanche 1500 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.67,
         "highway": 20.91,
         "comb": 16.94
@@ -1154,103 +1154,103 @@
         "comb": 32.34
       },
       "Equinox AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.33,
         "highway": 23.11,
         "comb": 18.81
       },
       "Equinox FWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.93,
         "highway": 24.23,
         "comb": 19.59
       },
       "Express 1500 2WD Cargo": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.13,
         "highway": 17.71,
         "comb": 14.86
       },
       "Express 1500 2WD Conversion Cargo": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.75,
         "highway": 17.02,
         "comb": 14.37
       },
       "Express 1500 2WD Passenger": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.75,
         "highway": 17.02,
         "comb": 14.37
       },
       "Express 1500 AWD Cargo": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.77,
         "highway": 17.02,
         "comb": 14.39
       },
       "Express 1500 AWD Conversion Cargo": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.9,
         "highway": 16.75,
         "comb": 14.39
       },
       "Express 1500 AWD Passenger": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.9,
         "highway": 16.75,
         "comb": 14.39
       },
       "Express 2500 2WD Cargo": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 10.4,
         "highway": 15.75,
         "comb": 12.28
       },
       "Express 2500 2WD Conversion Cargo": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 10.4,
         "highway": 15.75,
         "comb": 12.28
       },
       "Express 2500 2WD Passenger": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 10.79,
         "highway": 15.98,
         "comb": 12.64
       },
       "Express 3500 2WD Cargo": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 10.4,
         "highway": 15.75,
         "comb": 12.28
       },
       "Express 3500 2WD Passenger": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 10.59,
         "highway": 15.86,
         "comb": 12.45
       },
       "HHR FWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 21.68,
         "highway": 29.34,
         "comb": 24.57
       },
       "HHR Panel FWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 21.68,
         "highway": 29.34,
         "comb": 24.57
       },
       "Impala": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.15,
         "highway": 28.89,
         "comb": 22.57
       },
       "Malibu": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 21.82,
         "highway": 32.48,
         "comb": 25.6
@@ -1268,31 +1268,31 @@
         "comb": 20.95
       },
       "Silverado C15 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.43,
         "highway": 17.65,
         "comb": 14.34
       },
       "Silverado C15 XFE 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.43,
         "highway": 21.85,
         "comb": 17.78
       },
       "Silverado K15 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.26,
         "highway": 17.51,
         "comb": 14.17
       },
       "Suburban 1500 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.82,
         "highway": 21.18,
         "comb": 17.13
       },
       "Suburban 1500 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.67,
         "highway": 20.91,
         "comb": 16.94
@@ -1310,13 +1310,13 @@
         "comb": 12.22
       },
       "Tahoe 1500 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.82,
         "highway": 21.18,
         "comb": 17.13
       },
       "Tahoe 1500 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.67,
         "highway": 20.91,
         "comb": 16.94
@@ -1348,13 +1348,13 @@
     },
     "Chrysler": {
       "200": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.85,
         "highway": 28.45,
         "comb": 22.23
       },
       "200 Convertible": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.85,
         "highway": 28.45,
         "comb": 22.23
@@ -1372,7 +1372,7 @@
         "comb": 17.63
       },
       "Town and Country": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.15,
         "highway": 24.89,
         "comb": 19.94
@@ -1380,7 +1380,7 @@
     },
     "Dodge": {
       "Avenger": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.85,
         "highway": 28.45,
         "comb": 22.23
@@ -1416,13 +1416,13 @@
         "comb": 17.63
       },
       "Dakota Pickup 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.06,
         "highway": 18.67,
         "comb": 15.81
       },
       "Dakota Pickup 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.59,
         "highway": 18.6,
         "comb": 15.47
@@ -1440,7 +1440,7 @@
         "comb": 15.23
       },
       "Grand Caravan": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.15,
         "highway": 24.89,
         "comb": 19.94
@@ -1452,7 +1452,7 @@
         "comb": 18.82
       },
       "Journey FWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.7,
         "highway": 25.22,
         "comb": 19.7
@@ -1522,25 +1522,25 @@
     },
     "Ford": {
       "Crown Victoria FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.9,
         "highway": 23.65,
         "comb": 18.65
       },
       "E150 Van FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.29,
         "highway": 16.81,
         "comb": 14.67
       },
       "E150 Wagon FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.67,
         "highway": 16.05,
         "comb": 14.0
       },
       "E250 Van FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.16,
         "highway": 15.87,
         "comb": 13.59
@@ -1552,7 +1552,7 @@
         "comb": 11.68
       },
       "E350 Van FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 11.81,
         "highway": 15.56,
         "comb": 13.25
@@ -1564,7 +1564,7 @@
         "comb": 11.03
       },
       "E350 Wagon FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 11.46,
         "highway": 15.14,
         "comb": 12.87
@@ -1588,7 +1588,7 @@
         "comb": 22.19
       },
       "Escape 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.15,
         "highway": 22.65,
         "comb": 19.93
@@ -1600,7 +1600,7 @@
         "comb": 23.13
       },
       "Escape FWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.07,
         "highway": 24.76,
         "comb": 21.27
@@ -1618,19 +1618,19 @@
         "comb": 31.87
       },
       "Expedition 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.89,
         "highway": 19.76,
         "comb": 16.03
       },
       "Expedition 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.81,
         "highway": 17.61,
         "comb": 14.6
       },
       "Expedition Limo. 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 11.26,
         "highway": 15.74,
         "comb": 12.92
@@ -1654,7 +1654,7 @@
         "comb": 18.45
       },
       "F150 Pickup 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.13,
         "highway": 20.72,
         "comb": 17.22
@@ -1666,7 +1666,7 @@
         "comb": 17.45
       },
       "F150 Pickup 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.78,
         "highway": 20.62,
         "comb": 17.65
@@ -1714,7 +1714,7 @@
         "comb": 19.27
       },
       "Fusion AWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.56,
         "highway": 25.34,
         "comb": 20.37
@@ -1726,7 +1726,7 @@
         "comb": 20.94
       },
       "Fusion FWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.59,
         "highway": 27.93,
         "comb": 22.63
@@ -1836,67 +1836,67 @@
         "comb": 15.9
       },
       "Savana 1500  AWD (cargo)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.77,
         "highway": 17.02,
         "comb": 14.39
       },
       "Savana 1500  AWD Conversion (cargo)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.9,
         "highway": 16.75,
         "comb": 14.39
       },
       "Savana 1500 2WD (Passenger)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.75,
         "highway": 17.02,
         "comb": 14.37
       },
       "Savana 1500 2WD (cargo)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.13,
         "highway": 17.71,
         "comb": 14.86
       },
       "Savana 1500 2WD Conversion (cargo)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.75,
         "highway": 17.02,
         "comb": 14.37
       },
       "Savana 1500 AWD (Passenger)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.9,
         "highway": 16.75,
         "comb": 14.39
       },
       "Savana 2500 2WD (Passenger)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 10.79,
         "highway": 15.98,
         "comb": 12.64
       },
       "Savana 2500 2WD (cargo)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 10.4,
         "highway": 15.75,
         "comb": 12.28
       },
       "Savana 2500 2WD Conversion (cargo)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 10.4,
         "highway": 15.75,
         "comb": 12.28
       },
       "Savana 3500 2WD (Passenger)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 10.61,
         "highway": 15.88,
         "comb": 12.48
       },
       "Savana 3500 2WD (cargo)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 10.4,
         "highway": 15.75,
         "comb": 12.28
@@ -1914,49 +1914,49 @@
         "comb": 20.95
       },
       "Sierra C15 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.43,
         "highway": 17.65,
         "comb": 14.34
       },
       "Sierra C15 XFE 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.43,
         "highway": 21.85,
         "comb": 17.78
       },
       "Sierra K15 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.26,
         "highway": 17.51,
         "comb": 14.17
       },
       "Sierra K15 AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.28,
         "highway": 17.56,
         "comb": 14.2
       },
       "Terrain AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.33,
         "highway": 23.11,
         "comb": 18.81
       },
       "Terrain FWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.93,
         "highway": 24.23,
         "comb": 19.59
       },
       "Yukon 1500 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.06,
         "highway": 18.08,
         "comb": 15.62
       },
       "Yukon 1500 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.67,
         "highway": 20.91,
         "comb": 16.94
@@ -1974,7 +1974,7 @@
         "comb": 20.95
       },
       "Yukon Denali 1500 AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.0,
         "highway": 17.53,
         "comb": 15.33
@@ -1986,19 +1986,19 @@
         "comb": 21.28
       },
       "Yukon XL 1500 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.99,
         "highway": 18.08,
         "comb": 15.57
       },
       "Yukon XL 1500 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.67,
         "highway": 20.91,
         "comb": 16.94
       },
       "Yukon XL 1500 AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.59,
         "highway": 17.64,
         "comb": 14.45
@@ -2744,25 +2744,25 @@
         "comb": 38.07
       },
       "Navigator 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.92,
         "highway": 19.82,
         "comb": 16.07
       },
       "Navigator 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.81,
         "highway": 17.61,
         "comb": 14.6
       },
       "Navigator Limo. 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 11.26,
         "highway": 15.74,
         "comb": 12.92
       },
       "Town Car FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.9,
         "highway": 23.65,
         "comb": 18.65
@@ -2970,7 +2970,7 @@
         "comb": 22.45
       },
       "Tribute 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.12,
         "highway": 22.78,
         "comb": 19.96
@@ -2982,7 +2982,7 @@
         "comb": 23.36
       },
       "Tribute FWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.07,
         "highway": 24.76,
         "comb": 21.27
@@ -3268,7 +3268,7 @@
     },
     "Mercury": {
       "Grand Marquis FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.9,
         "highway": 23.65,
         "comb": 18.65
@@ -3280,7 +3280,7 @@
         "comb": 22.19
       },
       "Mariner 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.15,
         "highway": 22.65,
         "comb": 19.93
@@ -3292,7 +3292,7 @@
         "comb": 23.13
       },
       "Mariner FWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.07,
         "highway": 24.76,
         "comb": 21.27
@@ -3310,7 +3310,7 @@
         "comb": 31.87
       },
       "Milan AWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.56,
         "highway": 25.34,
         "comb": 20.37
@@ -3322,7 +3322,7 @@
         "comb": 24.31
       },
       "Milan FWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.59,
         "highway": 27.93,
         "comb": 22.63
@@ -3452,7 +3452,7 @@
         "comb": 14.8
       },
       "Armada 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.51,
         "highway": 18.67,
         "comb": 14.69
@@ -3464,7 +3464,7 @@
         "comb": 14.28
       },
       "Armada 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.4,
         "highway": 17.61,
         "comb": 14.3
@@ -3572,7 +3572,7 @@
         "comb": 15.13
       },
       "Titan 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.75,
         "highway": 18.12,
         "comb": 14.71
@@ -3584,7 +3584,7 @@
         "comb": 13.98
       },
       "Titan 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.17,
         "highway": 17.14,
         "comb": 14.0
@@ -3898,7 +3898,7 @@
         "comb": 20.21
       },
       "9-5 Sedan": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 20.24,
         "highway": 32.48,
         "comb": 24.37
@@ -4172,7 +4172,7 @@
         "comb": 14.79
       },
       "Sequoia 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.55,
         "highway": 17.58,
         "comb": 14.41
@@ -4214,7 +4214,7 @@
         "comb": 14.38
       },
       "Tundra 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.31,
         "highway": 17.49,
         "comb": 14.92
@@ -4290,7 +4290,7 @@
         "comb": 26.38
       },
       "Routan": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.15,
         "highway": 24.89,
         "comb": 19.94
@@ -5094,13 +5094,13 @@
         "comb": 19.12
       },
       "LaCrosse": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.49,
         "highway": 26.54,
         "comb": 20.66
       },
       "LaCrosse AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.46,
         "highway": 25.59,
         "comb": 19.61
@@ -5124,7 +5124,7 @@
         "comb": 28.21
       },
       "Verano": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 20.75,
         "highway": 30.98,
         "comb": 24.37
@@ -5164,31 +5164,31 @@
         "comb": 20.78
       },
       "Escalade 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.06,
         "highway": 18.09,
         "comb": 15.62
       },
       "Escalade AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.0,
         "highway": 17.53,
         "comb": 15.33
       },
       "Escalade ESV 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.06,
         "highway": 18.09,
         "comb": 15.62
       },
       "Escalade ESV AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.59,
         "highway": 17.64,
         "comb": 14.45
       },
       "Escalade Ext AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.59,
         "highway": 17.64,
         "comb": 14.45
@@ -5206,13 +5206,13 @@
         "comb": 21.28
       },
       "SRX 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.57,
         "highway": 23.79,
         "comb": 19.19
       },
       "SRX AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.94,
         "highway": 22.58,
         "comb": 18.37
@@ -5220,13 +5220,13 @@
     },
     "Chevrolet": {
       "Avalanche 1500 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.82,
         "highway": 21.18,
         "comb": 17.13
       },
       "Avalanche 1500 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.67,
         "highway": 20.84,
         "comb": 16.92
@@ -5322,73 +5322,73 @@
         "comb": 16.85
       },
       "Express 1500 2WD Conversion Cargo": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.75,
         "highway": 17.02,
         "comb": 14.37
       },
       "Express 1500 2WD Passenger": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.75,
         "highway": 17.02,
         "comb": 14.37
       },
       "Express 1500 AWD Cargo": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.9,
         "highway": 16.75,
         "comb": 14.39
       },
       "Express 1500 AWD Conversion Cargo": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.9,
         "highway": 16.75,
         "comb": 14.39
       },
       "Express 1500 AWD Passenger": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.9,
         "highway": 16.75,
         "comb": 14.39
       },
       "Express 2500 2WD Cargo": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 10.24,
         "highway": 15.21,
         "comb": 12.01
       },
       "Express 2500 2WD Conversion Cargo": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 10.24,
         "highway": 15.21,
         "comb": 12.01
       },
       "Express 2500 2WD Passenger": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 10.79,
         "highway": 15.91,
         "comb": 12.62
       },
       "Express 3500 2WD Cargo": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 9.92,
         "highway": 14.44,
         "comb": 11.55
       },
       "Express 3500 2WD Passenger": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 10.41,
         "highway": 15.43,
         "comb": 12.2
       },
       "Impala": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.82,
         "highway": 29.15,
         "comb": 21.6
       },
       "Malibu": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 21.82,
         "highway": 32.51,
         "comb": 25.61
@@ -5406,19 +5406,19 @@
         "comb": 20.94
       },
       "Silverado C15 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.89,
         "highway": 19.0,
         "comb": 15.8
       },
       "Silverado C15 XFE 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.43,
         "highway": 21.85,
         "comb": 17.78
       },
       "Silverado K15 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.21,
         "highway": 17.65,
         "comb": 14.89
@@ -5436,13 +5436,13 @@
         "comb": 30.42
       },
       "Suburban 1500 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.82,
         "highway": 21.18,
         "comb": 17.13
       },
       "Suburban 1500 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.67,
         "highway": 20.84,
         "comb": 16.92
@@ -5460,13 +5460,13 @@
         "comb": 12.22
       },
       "Tahoe 1500 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.82,
         "highway": 21.18,
         "comb": 17.13
       },
       "Tahoe 1500 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.67,
         "highway": 20.84,
         "comb": 16.92
@@ -5504,25 +5504,25 @@
     },
     "Chrysler": {
       "200": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.85,
         "highway": 28.45,
         "comb": 22.23
       },
       "200 Convertible": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.85,
         "highway": 28.45,
         "comb": 22.23
       },
       "300": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.07,
         "highway": 30.1,
         "comb": 22.84
       },
       "300 AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.34,
         "highway": 26.91,
         "comb": 21.41
@@ -5534,7 +5534,7 @@
         "comb": 17.04
       },
       "Town and Country": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.15,
         "highway": 24.89,
         "comb": 19.94
@@ -5542,7 +5542,7 @@
     },
     "Dodge": {
       "Avenger": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.85,
         "highway": 28.45,
         "comb": 22.23
@@ -5566,13 +5566,13 @@
         "comb": 17.04
       },
       "Charger": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.07,
         "highway": 30.1,
         "comb": 22.84
       },
       "Charger AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.34,
         "highway": 26.91,
         "comb": 21.41
@@ -5596,7 +5596,7 @@
         "comb": 15.28
       },
       "Grand Caravan": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.15,
         "highway": 24.89,
         "comb": 19.94
@@ -5608,19 +5608,19 @@
         "comb": 18.82
       },
       "Journey FWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.7,
         "highway": 25.22,
         "comb": 19.7
       },
       "Ram 1500 Pickup 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.13,
         "highway": 19.56,
         "comb": 16.15
       },
       "Ram 1500 Pickup 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.9,
         "highway": 19.08,
         "comb": 15.84
@@ -5682,19 +5682,19 @@
     },
     "Ford": {
       "E150 Van FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.36,
         "highway": 16.19,
         "comb": 13.83
       },
       "E150 Wagon FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 11.89,
         "highway": 15.7,
         "comb": 13.35
       },
       "E250 Van FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.31,
         "highway": 16.14,
         "comb": 13.78
@@ -5706,7 +5706,7 @@
         "comb": 11.78
       },
       "E350 Van FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 11.89,
         "highway": 15.7,
         "comb": 13.35
@@ -5718,7 +5718,7 @@
         "comb": 11.2
       },
       "E350 Wagon FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 11.42,
         "highway": 15.0,
         "comb": 12.8
@@ -5742,7 +5742,7 @@
         "comb": 22.67
       },
       "Escape AWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.19,
         "highway": 22.7,
         "comb": 19.97
@@ -5754,7 +5754,7 @@
         "comb": 24.57
       },
       "Escape FWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.07,
         "highway": 24.76,
         "comb": 21.27
@@ -5772,13 +5772,13 @@
         "comb": 31.87
       },
       "Expedition 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.86,
         "highway": 19.66,
         "comb": 15.98
       },
       "Expedition 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.87,
         "highway": 17.61,
         "comb": 14.64
@@ -5802,7 +5802,7 @@
         "comb": 18.49
       },
       "F150 Pickup 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.04,
         "highway": 20.64,
         "comb": 17.13
@@ -5814,7 +5814,7 @@
         "comb": 17.28
       },
       "F150 Pickup 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.2,
         "highway": 19.15,
         "comb": 16.07
@@ -5862,7 +5862,7 @@
         "comb": 29.14
       },
       "Focus FWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 27.31,
         "highway": 36.46,
         "comb": 30.78
@@ -5874,7 +5874,7 @@
         "comb": 31.92
       },
       "Focus SFE FWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 27.81,
         "highway": 38.96,
         "comb": 31.92
@@ -5886,7 +5886,7 @@
         "comb": 19.39
       },
       "Fusion AWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.56,
         "highway": 25.34,
         "comb": 20.37
@@ -5898,7 +5898,7 @@
         "comb": 20.98
       },
       "Fusion FWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.59,
         "highway": 27.93,
         "comb": 22.63
@@ -6002,19 +6002,19 @@
         "comb": 17.92
       },
       "Savana 1500  AWD (cargo)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.9,
         "highway": 16.75,
         "comb": 14.39
       },
       "Savana 1500  AWD Conversion (cargo)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.9,
         "highway": 16.75,
         "comb": 14.39
       },
       "Savana 1500 2WD (Passenger)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.75,
         "highway": 17.02,
         "comb": 14.37
@@ -6026,43 +6026,43 @@
         "comb": 16.85
       },
       "Savana 1500 2WD Conversion (cargo)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.75,
         "highway": 17.02,
         "comb": 14.37
       },
       "Savana 1500 AWD (Passenger)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.9,
         "highway": 16.75,
         "comb": 14.39
       },
       "Savana 2500 2WD (Passenger)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 10.79,
         "highway": 15.91,
         "comb": 12.62
       },
       "Savana 2500 2WD (cargo)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 10.24,
         "highway": 15.21,
         "comb": 12.01
       },
       "Savana 2500 2WD Conversion (cargo)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 10.24,
         "highway": 15.21,
         "comb": 12.01
       },
       "Savana 3500 2WD (Passenger)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 10.46,
         "highway": 15.5,
         "comb": 12.26
       },
       "Savana 3500 2WD (cargo)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 9.92,
         "highway": 14.44,
         "comb": 11.55
@@ -6080,25 +6080,25 @@
         "comb": 20.94
       },
       "Sierra C15 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.93,
         "highway": 19.04,
         "comb": 15.84
       },
       "Sierra C15 XFE 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.43,
         "highway": 21.85,
         "comb": 17.78
       },
       "Sierra K15 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.19,
         "highway": 17.61,
         "comb": 14.87
       },
       "Sierra K15 AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.28,
         "highway": 17.56,
         "comb": 14.2
@@ -6116,13 +6116,13 @@
         "comb": 25.6
       },
       "Yukon 1500 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.06,
         "highway": 18.09,
         "comb": 15.62
       },
       "Yukon 1500 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.67,
         "highway": 20.84,
         "comb": 16.92
@@ -6140,7 +6140,7 @@
         "comb": 20.94
       },
       "Yukon Denali 1500 AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.0,
         "highway": 17.53,
         "comb": 15.33
@@ -6152,19 +6152,19 @@
         "comb": 21.28
       },
       "Yukon XL 1500 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.06,
         "highway": 18.09,
         "comb": 15.62
       },
       "Yukon XL 1500 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.67,
         "highway": 20.84,
         "comb": 16.92
       },
       "Yukon XL 1500 AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.59,
         "highway": 17.64,
         "comb": 14.45
@@ -6916,13 +6916,13 @@
         "comb": 38.07
       },
       "Navigator 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.88,
         "highway": 19.71,
         "comb": 16.01
       },
       "Navigator 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.87,
         "highway": 17.61,
         "comb": 14.64
@@ -7576,13 +7576,13 @@
         "comb": 21.35
       },
       "Armada 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.51,
         "highway": 18.67,
         "comb": 14.69
       },
       "Armada 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.4,
         "highway": 17.61,
         "comb": 14.3
@@ -7684,13 +7684,13 @@
         "comb": 23.64
       },
       "Titan 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.89,
         "highway": 17.99,
         "comb": 14.78
       },
       "Titan 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.29,
         "highway": 17.11,
         "comb": 14.07
@@ -7958,7 +7958,7 @@
     },
     "Ram": {
       "C/V Cargo Van": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.15,
         "highway": 24.89,
         "comb": 19.94
@@ -8012,7 +8012,7 @@
     },
     "Saab": {
       "9-3 Convertible": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 20.24,
         "highway": 32.48,
         "comb": 24.37
@@ -8024,13 +8024,13 @@
         "comb": 23.47
       },
       "9-3 Sport Sedan": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 20.24,
         "highway": 32.48,
         "comb": 24.37
       },
       "9-3 SportCombi": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 20.24,
         "highway": 32.48,
         "comb": 24.37
@@ -8054,7 +8054,7 @@
         "comb": 20.21
       },
       "9-5 Sedan": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 20.24,
         "highway": 32.48,
         "comb": 24.37
@@ -8346,7 +8346,7 @@
         "comb": 14.38
       },
       "Sequoia 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.9,
         "highway": 17.57,
         "comb": 14.65
@@ -8388,7 +8388,7 @@
         "comb": 14.58
       },
       "Tundra 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.32,
         "highway": 17.76,
         "comb": 15.01
@@ -8488,7 +8488,7 @@
         "comb": 22.69
       },
       "Routan": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.15,
         "highway": 24.89,
         "comb": 19.94
@@ -9362,13 +9362,13 @@
         "comb": 25.36
       },
       "LaCrosse": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.23,
         "highway": 26.91,
         "comb": 20.55
       },
       "LaCrosse AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.63,
         "highway": 25.15,
         "comb": 19.62
@@ -9444,31 +9444,31 @@
         "comb": 20.5
       },
       "Escalade 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.06,
         "highway": 18.09,
         "comb": 15.62
       },
       "Escalade AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.0,
         "highway": 17.53,
         "comb": 15.33
       },
       "Escalade ESV 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.06,
         "highway": 18.09,
         "comb": 15.62
       },
       "Escalade ESV AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.59,
         "highway": 17.64,
         "comb": 14.45
       },
       "Escalade Ext AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.59,
         "highway": 17.64,
         "comb": 14.45
@@ -9486,13 +9486,13 @@
         "comb": 21.28
       },
       "SRX 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.57,
         "highway": 23.79,
         "comb": 19.19
       },
       "SRX AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.94,
         "highway": 22.58,
         "comb": 18.37
@@ -9524,13 +9524,13 @@
     },
     "Chevrolet": {
       "Avalanche 1500 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.82,
         "highway": 21.18,
         "comb": 17.13
       },
       "Avalanche 1500 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.82,
         "highway": 21.18,
         "comb": 17.13
@@ -9542,13 +9542,13 @@
         "comb": 20.83
       },
       "Captiva AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.03,
         "highway": 22.0,
         "comb": 18.44
       },
       "Captiva FWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.63,
         "highway": 23.71,
         "comb": 19.21
@@ -9572,73 +9572,73 @@
         "comb": 32.34
       },
       "Equinox AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.95,
         "highway": 23.0,
         "comb": 18.65
       },
       "Equinox FWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 22.25,
         "highway": 31.39,
         "comb": 25.6
       },
       "Express 1500 2WD Cargo": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.13,
         "highway": 17.71,
         "comb": 14.86
       },
       "Express 1500 2WD Conversion Cargo": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.75,
         "highway": 17.02,
         "comb": 14.37
       },
       "Express 1500 2WD Passenger": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.75,
         "highway": 17.02,
         "comb": 14.37
       },
       "Express 1500 AWD Cargo": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.9,
         "highway": 16.75,
         "comb": 14.39
       },
       "Express 1500 AWD Conversion Cargo": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.9,
         "highway": 16.75,
         "comb": 14.39
       },
       "Express 1500 AWD Passenger": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.9,
         "highway": 16.75,
         "comb": 14.39
       },
       "Express 2500 2WD Conversion Cargo": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 10.24,
         "highway": 15.21,
         "comb": 12.01
       },
       "Express 2500 2WD Passenger": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 10.79,
         "highway": 15.91,
         "comb": 12.62
       },
       "Express 3500 2WD Passenger": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 10.59,
         "highway": 15.66,
         "comb": 12.4
       },
       "Impala": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.82,
         "highway": 29.15,
         "comb": 21.6
@@ -9668,19 +9668,19 @@
         "comb": 21.02
       },
       "Silverado C15 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.59,
         "highway": 17.56,
         "comb": 14.43
       },
       "Silverado C15 XFE 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.43,
         "highway": 21.85,
         "comb": 17.78
       },
       "Silverado K15 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.27,
         "highway": 17.52,
         "comb": 14.18
@@ -9710,13 +9710,13 @@
         "comb": 31.28
       },
       "Suburban 1500 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.82,
         "highway": 21.18,
         "comb": 17.13
       },
       "Suburban 1500 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.82,
         "highway": 21.18,
         "comb": 17.13
@@ -9734,13 +9734,13 @@
         "comb": 12.22
       },
       "Tahoe 1500 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.82,
         "highway": 21.18,
         "comb": 17.13
       },
       "Tahoe 1500 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.82,
         "highway": 21.18,
         "comb": 17.13
@@ -9790,13 +9790,13 @@
         "comb": 20.9
       },
       "300": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.07,
         "highway": 30.1,
         "comb": 22.84
       },
       "300 AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.34,
         "highway": 26.91,
         "comb": 21.41
@@ -9808,7 +9808,7 @@
         "comb": 17.04
       },
       "Town and Country": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.78,
         "highway": 24.63,
         "comb": 19.59
@@ -9834,13 +9834,13 @@
         "comb": 16.91
       },
       "Charger": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.07,
         "highway": 30.1,
         "comb": 22.84
       },
       "Charger AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.34,
         "highway": 26.91,
         "comb": 21.41
@@ -9864,7 +9864,7 @@
         "comb": 31.79
       },
       "Durango 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.33,
         "highway": 23.05,
         "comb": 18.79
@@ -9876,7 +9876,7 @@
         "comb": 15.28
       },
       "Grand Caravan": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.15,
         "highway": 24.89,
         "comb": 19.94
@@ -9960,19 +9960,19 @@
         "comb": 40.0
       },
       "E150 Van FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.36,
         "highway": 16.19,
         "comb": 13.83
       },
       "E150 Wagon FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 11.89,
         "highway": 15.7,
         "comb": 13.35
       },
       "E250 Van FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.31,
         "highway": 16.14,
         "comb": 13.79
@@ -9984,7 +9984,7 @@
         "comb": 11.78
       },
       "E350 Van FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 11.89,
         "highway": 15.7,
         "comb": 13.35
@@ -9996,7 +9996,7 @@
         "comb": 11.37
       },
       "E350 Wagon FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 11.5,
         "highway": 15.28,
         "comb": 12.94
@@ -10026,19 +10026,19 @@
         "comb": 25.96
       },
       "Expedition 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.86,
         "highway": 19.71,
         "comb": 16.0
       },
       "Expedition 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.86,
         "highway": 17.62,
         "comb": 14.64
       },
       "Explorer 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.15,
         "highway": 24.04,
         "comb": 19.69
@@ -10050,7 +10050,7 @@
         "comb": 18.86
       },
       "Explorer AWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.55,
         "highway": 22.71,
         "comb": 18.86
@@ -10068,7 +10068,7 @@
         "comb": 18.48
       },
       "F150 Pickup 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.67,
         "highway": 22.68,
         "comb": 18.93
@@ -10080,7 +10080,7 @@
         "comb": 17.18
       },
       "F150 Pickup 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.73,
         "highway": 20.6,
         "comb": 17.6
@@ -10128,13 +10128,13 @@
         "comb": 26.12
       },
       "Focus FWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 25.76,
         "highway": 34.69,
         "comb": 29.13
       },
       "Focus SFE FWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 27.81,
         "highway": 38.96,
         "comb": 31.92
@@ -10182,7 +10182,7 @@
         "comb": 20.05
       },
       "Taurus AWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.12,
         "highway": 25.54,
         "comb": 20.84
@@ -10194,7 +10194,7 @@
         "comb": 25.41
       },
       "Taurus FWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.31,
         "highway": 28.15,
         "comb": 22.49
@@ -10226,55 +10226,55 @@
         "comb": 19.12
       },
       "Savana 1500  2WD Conversion (cargo)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.75,
         "highway": 17.02,
         "comb": 14.37
       },
       "Savana 1500  AWD (cargo)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.9,
         "highway": 16.75,
         "comb": 14.39
       },
       "Savana 1500  AWD Conversion (cargo)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.9,
         "highway": 16.75,
         "comb": 14.39
       },
       "Savana 1500 2WD (Passenger)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.75,
         "highway": 17.02,
         "comb": 14.37
       },
       "Savana 1500 2WD (cargo)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.13,
         "highway": 17.71,
         "comb": 14.86
       },
       "Savana 1500 AWD (Passenger)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.9,
         "highway": 16.75,
         "comb": 14.39
       },
       "Savana 2500 2WD (Passenger)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 10.79,
         "highway": 15.91,
         "comb": 12.62
       },
       "Savana 2500 2WD Conversion (cargo)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 10.24,
         "highway": 15.21,
         "comb": 12.01
       },
       "Savana 3500 2WD (Passenger)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 10.64,
         "highway": 15.72,
         "comb": 12.45
@@ -10292,49 +10292,49 @@
         "comb": 21.02
       },
       "Sierra C15 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.59,
         "highway": 17.56,
         "comb": 14.43
       },
       "Sierra C15 XFE 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.43,
         "highway": 21.85,
         "comb": 17.78
       },
       "Sierra K15 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.26,
         "highway": 17.5,
         "comb": 14.17
       },
       "Sierra K15 AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.28,
         "highway": 17.56,
         "comb": 14.2
       },
       "Terrain AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.95,
         "highway": 23.0,
         "comb": 18.65
       },
       "Terrain FWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.0,
         "highway": 24.0,
         "comb": 20.0
       },
       "Yukon 1500 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.06,
         "highway": 18.09,
         "comb": 15.62
       },
       "Yukon 1500 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.82,
         "highway": 21.18,
         "comb": 17.13
@@ -10352,7 +10352,7 @@
         "comb": 21.28
       },
       "Yukon Denali 1500 AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.0,
         "highway": 17.53,
         "comb": 15.33
@@ -10364,19 +10364,19 @@
         "comb": 21.28
       },
       "Yukon XL 1500 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.06,
         "highway": 18.09,
         "comb": 15.62
       },
       "Yukon XL 1500 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.82,
         "highway": 21.18,
         "comb": 17.13
       },
       "Yukon XL 1500 AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.59,
         "highway": 17.64,
         "comb": 14.45
@@ -11206,13 +11206,13 @@
         "comb": 38.0
       },
       "Navigator 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.87,
         "highway": 19.72,
         "comb": 16.01
       },
       "Navigator 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.86,
         "highway": 17.62,
         "comb": 14.64
@@ -11898,13 +11898,13 @@
         "comb": 26.08
       },
       "Armada 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.51,
         "highway": 18.67,
         "comb": 14.69
       },
       "Armada 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.4,
         "highway": 17.61,
         "comb": 14.3
@@ -12024,13 +12024,13 @@
         "comb": 33.3
       },
       "Titan 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.89,
         "highway": 17.98,
         "comb": 14.77
       },
       "Titan 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.22,
         "highway": 17.06,
         "comb": 14.01
@@ -12238,7 +12238,7 @@
         "comb": 20.82
       },
       "C/V": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.15,
         "highway": 24.89,
         "comb": 19.94
@@ -12620,7 +12620,7 @@
         "comb": 14.25
       },
       "Sequoia 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.78,
         "highway": 17.46,
         "comb": 14.53
@@ -12662,7 +12662,7 @@
         "comb": 14.62
       },
       "Tundra 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.21,
         "highway": 17.71,
         "comb": 14.92
@@ -12768,7 +12768,7 @@
         "comb": 25.28
       },
       "Routan": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.78,
         "highway": 24.63,
         "comb": 19.59
@@ -13714,7 +13714,7 @@
         "comb": 21.3
       },
       "LaCrosse AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.15,
         "highway": 26.06,
         "comb": 20.27
@@ -13812,25 +13812,25 @@
         "comb": 33.0
       },
       "Escalade 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.06,
         "highway": 18.09,
         "comb": 15.62
       },
       "Escalade AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.0,
         "highway": 17.53,
         "comb": 15.33
       },
       "Escalade ESV 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.06,
         "highway": 18.09,
         "comb": 15.62
       },
       "Escalade ESV AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.59,
         "highway": 17.64,
         "comb": 14.45
@@ -13880,13 +13880,13 @@
         "comb": 15.26
       },
       "Captiva AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.03,
         "highway": 22.0,
         "comb": 18.44
       },
       "Captiva FWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 20.0,
         "highway": 28.0,
         "comb": 23.0
@@ -13910,79 +13910,79 @@
         "comb": 32.42
       },
       "Equinox AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.95,
         "highway": 23.0,
         "comb": 18.67
       },
       "Equinox FWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 22.25,
         "highway": 31.39,
         "comb": 25.6
       },
       "Express 1500 2WD Cargo": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.13,
         "highway": 17.71,
         "comb": 14.86
       },
       "Express 1500 2WD Conversion Cargo": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.75,
         "highway": 17.02,
         "comb": 14.37
       },
       "Express 1500 2WD Passenger": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.75,
         "highway": 17.02,
         "comb": 14.37
       },
       "Express 1500 AWD Cargo": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.9,
         "highway": 16.75,
         "comb": 14.39
       },
       "Express 1500 AWD Conversion Cargo": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.9,
         "highway": 16.75,
         "comb": 14.39
       },
       "Express 1500 AWD Passenger": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.9,
         "highway": 16.75,
         "comb": 14.39
       },
       "Express 2500 2WD Conversion Cargo": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 10.24,
         "highway": 15.21,
         "comb": 12.01
       },
       "Express 2500 2WD Passenger": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 10.79,
         "highway": 15.91,
         "comb": 12.62
       },
       "Express 3500 2WD Passenger": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 10.68,
         "highway": 15.77,
         "comb": 12.5
       },
       "Impala": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.78,
         "highway": 28.25,
         "comb": 22.12
       },
       "Impala Limited": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.82,
         "highway": 29.15,
         "comb": 21.6
@@ -14012,7 +14012,7 @@
         "comb": 16.6
       },
       "Silverado C15 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.55,
         "highway": 23.45,
         "comb": 19.79
@@ -14060,25 +14060,25 @@
         "comb": 3.5282
       },
       "Suburban C10 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.82,
         "highway": 21.18,
         "comb": 17.13
       },
       "Suburban K10 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.82,
         "highway": 21.18,
         "comb": 17.13
       },
       "Tahoe C10 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.82,
         "highway": 21.18,
         "comb": 17.13
       },
       "Tahoe K10 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.82,
         "highway": 21.18,
         "comb": 17.13
@@ -14104,19 +14104,19 @@
     },
     "Chrysler": {
       "200": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.85,
         "highway": 28.45,
         "comb": 22.23
       },
       "200 Convertible": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.85,
         "highway": 28.45,
         "comb": 22.23
       },
       "300": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.0,
         "highway": 30.1,
         "comb": 22.78
@@ -14142,7 +14142,7 @@
     },
     "Dodge": {
       "Avenger": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.85,
         "highway": 28.45,
         "comb": 22.23
@@ -14160,7 +14160,7 @@
         "comb": 17.05
       },
       "Charger": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.0,
         "highway": 30.1,
         "comb": 22.78
@@ -14220,7 +14220,7 @@
         "comb": 18.89
       },
       "Journey FWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.55,
         "highway": 24.82,
         "comb": 19.47
@@ -14310,19 +14310,19 @@
         "comb": 38.55
       },
       "E150 Van FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.36,
         "highway": 16.47,
         "comb": 14.6
       },
       "E150 Wagon FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.75,
         "highway": 16.26,
         "comb": 14.12
       },
       "E250 Van FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.36,
         "highway": 16.47,
         "comb": 14.6
@@ -14334,7 +14334,7 @@
         "comb": 11.78
       },
       "E350 Van FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 11.89,
         "highway": 15.7,
         "comb": 13.35
@@ -14346,7 +14346,7 @@
         "comb": 11.22
       },
       "E350 Wagon FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 11.5,
         "highway": 15.28,
         "comb": 12.94
@@ -14376,19 +14376,19 @@
         "comb": 24.81
       },
       "Expedition 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.86,
         "highway": 19.7,
         "comb": 15.99
       },
       "Expedition 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.87,
         "highway": 17.64,
         "comb": 14.65
       },
       "Explorer 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.15,
         "highway": 24.04,
         "comb": 19.69
@@ -14400,7 +14400,7 @@
         "comb": 18.37
       },
       "Explorer AWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.55,
         "highway": 22.71,
         "comb": 18.86
@@ -14418,7 +14418,7 @@
         "comb": 14.86
       },
       "F150 Pickup 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.09,
         "highway": 20.66,
         "comb": 17.18
@@ -14430,7 +14430,7 @@
         "comb": 13.48
       },
       "F150 Pickup 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.14,
         "highway": 18.96,
         "comb": 15.96
@@ -14484,13 +14484,13 @@
         "comb": 26.12
       },
       "Focus FWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 25.76,
         "highway": 34.69,
         "comb": 29.13
       },
       "Focus SFE FWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 27.81,
         "highway": 38.96,
         "comb": 31.92
@@ -14538,7 +14538,7 @@
         "comb": 20.84
       },
       "Taurus AWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.12,
         "highway": 25.54,
         "comb": 20.84
@@ -14550,7 +14550,7 @@
         "comb": 22.54
       },
       "Taurus FWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.32,
         "highway": 28.28,
         "comb": 22.54
@@ -14588,55 +14588,55 @@
         "comb": 19.12
       },
       "Savana 1500  AWD (cargo)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.9,
         "highway": 16.75,
         "comb": 14.39
       },
       "Savana 1500  AWD Conversion (cargo)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.9,
         "highway": 16.75,
         "comb": 14.39
       },
       "Savana 1500 2WD (Passenger)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.75,
         "highway": 17.02,
         "comb": 14.37
       },
       "Savana 1500 2WD (cargo)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.13,
         "highway": 17.71,
         "comb": 14.86
       },
       "Savana 1500 2WD Conversion (cargo)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.75,
         "highway": 17.02,
         "comb": 14.37
       },
       "Savana 1500 AWD (Passenger)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.9,
         "highway": 16.75,
         "comb": 14.39
       },
       "Savana 2500 2WD (Passenger)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 10.79,
         "highway": 15.91,
         "comb": 12.62
       },
       "Savana 2500 2WD Conversion (cargo)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 10.24,
         "highway": 15.21,
         "comb": 12.01
       },
       "Savana 3500 2WD (Passenger)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 10.64,
         "highway": 15.72,
         "comb": 12.45
@@ -14654,49 +14654,49 @@
         "comb": 16.57
       },
       "Terrain AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.95,
         "highway": 23.0,
         "comb": 18.67
       },
       "Terrain FWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 22.25,
         "highway": 31.39,
         "comb": 25.6
       },
       "Yukon C10 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.06,
         "highway": 18.09,
         "comb": 15.62
       },
       "Yukon Denali K10 AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.0,
         "highway": 17.53,
         "comb": 15.33
       },
       "Yukon K10 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.82,
         "highway": 21.18,
         "comb": 17.13
       },
       "Yukon XL C10 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.06,
         "highway": 18.09,
         "comb": 15.62
       },
       "Yukon XL K10 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.82,
         "highway": 21.18,
         "comb": 17.13
       },
       "Yukon XL K10 AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.59,
         "highway": 17.64,
         "comb": 14.45
@@ -15664,13 +15664,13 @@
         "comb": 38.0
       },
       "Navigator 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.86,
         "highway": 19.7,
         "comb": 15.99
       },
       "Navigator 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.87,
         "highway": 17.64,
         "comb": 14.65
@@ -16420,13 +16420,13 @@
         "comb": 25.11
       },
       "Armada 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.51,
         "highway": 18.67,
         "comb": 14.69
       },
       "Armada 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.4,
         "highway": 17.61,
         "comb": 14.3
@@ -16570,13 +16570,13 @@
         "comb": 33.4
       },
       "Titan 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.9,
         "highway": 18.02,
         "comb": 14.79
       },
       "Titan 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.25,
         "highway": 17.15,
         "comb": 14.06
@@ -16828,7 +16828,7 @@
     },
     "Ram": {
       "1500 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.97,
         "highway": 24.6,
         "comb": 19.72
@@ -17196,7 +17196,7 @@
         "comb": 14.3
       },
       "Sequoia 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.76,
         "highway": 17.45,
         "comb": 14.52
@@ -17238,7 +17238,7 @@
         "comb": 14.69
       },
       "Tundra 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.17,
         "highway": 17.55,
         "comb": 14.84
@@ -17330,7 +17330,7 @@
         "comb": 25.62
       },
       "Routan": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.7,
         "highway": 24.56,
         "comb": 19.51
@@ -18396,13 +18396,13 @@
         "comb": 26.0
       },
       "LaCrosse": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.0,
         "highway": 28.0,
         "comb": 21.0
       },
       "LaCrosse AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.0,
         "highway": 25.61,
         "comb": 20.03
@@ -18544,7 +18544,7 @@
         "comb": 15.84
       },
       "Captiva FWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 20.0,
         "highway": 28.0,
         "comb": 23.0
@@ -18592,7 +18592,7 @@
         "comb": 32.42
       },
       "Equinox AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 20.42,
         "highway": 28.25,
         "comb": 23.33
@@ -18634,7 +18634,7 @@
         "comb": 19.84
       },
       "Impala Limited": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.82,
         "highway": 29.15,
         "comb": 21.6
@@ -18658,7 +18658,7 @@
         "comb": 16.86
       },
       "Silverado C15 Cab Chassis 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.0,
         "highway": 21.0,
         "comb": 18.0
@@ -18670,7 +18670,7 @@
         "comb": 17.11
       },
       "Silverado K15 Cab Chassis 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.0,
         "highway": 20.0,
         "comb": 18.0
@@ -18768,31 +18768,31 @@
     },
     "Chrysler": {
       "200": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.0,
         "highway": 30.92,
         "comb": 22.99
       },
       "200 AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.34,
         "highway": 28.45,
         "comb": 21.83
       },
       "300": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.0,
         "highway": 30.1,
         "comb": 22.78
       },
       "300 AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.34,
         "highway": 26.91,
         "comb": 21.41
       },
       "Town and Country": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.15,
         "highway": 24.89,
         "comb": 19.94
@@ -18812,13 +18812,13 @@
         "comb": 15.66
       },
       "Charger": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.0,
         "highway": 30.1,
         "comb": 22.78
       },
       "Charger AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.34,
         "highway": 26.91,
         "comb": 21.41
@@ -18860,7 +18860,7 @@
         "comb": 16.78
       },
       "Grand Caravan": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.15,
         "highway": 24.89,
         "comb": 19.94
@@ -18872,7 +18872,7 @@
         "comb": 18.89
       },
       "Journey FWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.55,
         "highway": 24.82,
         "comb": 19.47
@@ -19016,7 +19016,7 @@
         "comb": 16.38
       },
       "Explorer 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.15,
         "highway": 24.04,
         "comb": 19.69
@@ -19028,7 +19028,7 @@
         "comb": 18.32
       },
       "Explorer AWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.55,
         "highway": 22.71,
         "comb": 18.86
@@ -19046,7 +19046,7 @@
         "comb": 19.66
       },
       "F150 Pickup 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.3,
         "highway": 22.25,
         "comb": 17.8
@@ -19058,7 +19058,7 @@
         "comb": 18.84
       },
       "F150 Pickup 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.82,
         "highway": 20.9,
         "comb": 17.05
@@ -19106,7 +19106,7 @@
         "comb": 26.18
       },
       "Focus FWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 25.55,
         "highway": 35.36,
         "comb": 29.2
@@ -19160,7 +19160,7 @@
         "comb": 20.84
       },
       "Taurus AWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.12,
         "highway": 25.54,
         "comb": 20.84
@@ -19172,7 +19172,7 @@
         "comb": 22.51
       },
       "Taurus FWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.32,
         "highway": 28.21,
         "comb": 22.51
@@ -19202,7 +19202,7 @@
         "comb": 16.02
       },
       "Transit T150 Wagon FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.2,
         "highway": 18.67,
         "comb": 15.92
@@ -19264,7 +19264,7 @@
         "comb": 17.3
       },
       "Sierra C15 Cab Chassis 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.0,
         "highway": 21.0,
         "comb": 18.0
@@ -19276,7 +19276,7 @@
         "comb": 17.11
       },
       "Sierra K15 Cab Chassis 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.0,
         "highway": 20.0,
         "comb": 18.0
@@ -19844,7 +19844,7 @@
     },
     "Jeep": {
       "Cherokee 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 20.82,
         "highway": 27.87,
         "comb": 23.49
@@ -19856,7 +19856,7 @@
         "comb": 21.44
       },
       "Cherokee FWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 21.47,
         "highway": 30.03,
         "comb": 24.63
@@ -21178,13 +21178,13 @@
         "comb": 25.94
       },
       "Armada 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.51,
         "highway": 18.67,
         "comb": 14.69
       },
       "Armada 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.4,
         "highway": 17.61,
         "comb": 14.3
@@ -21334,13 +21334,13 @@
         "comb": 33.41
       },
       "Titan 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.97,
         "highway": 18.19,
         "comb": 14.89
       },
       "Titan 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.27,
         "highway": 17.11,
         "comb": 14.06
@@ -21608,7 +21608,7 @@
     },
     "Ram": {
       "1500 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.97,
         "highway": 24.6,
         "comb": 19.72
@@ -21626,7 +21626,7 @@
         "comb": 20.82
       },
       "C/V Tradesman": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.67,
         "highway": 25.54,
         "comb": 20.52
@@ -21974,7 +21974,7 @@
         "comb": 14.37
       },
       "Sequoia 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.77,
         "highway": 17.46,
         "comb": 14.53
@@ -22016,7 +22016,7 @@
         "comb": 14.76
       },
       "Tundra 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.13,
         "highway": 17.42,
         "comb": 14.77
@@ -23150,7 +23150,7 @@
         "comb": 21.48
       },
       "LaCrosse AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.08,
         "highway": 25.74,
         "comb": 20.13
@@ -23394,7 +23394,7 @@
         "comb": 19.84
       },
       "Impala Limited": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.82,
         "highway": 29.15,
         "comb": 21.6
@@ -23552,13 +23552,13 @@
     },
     "Chrysler": {
       "200": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.0,
         "highway": 30.92,
         "comb": 22.99
       },
       "200 AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.34,
         "highway": 28.45,
         "comb": 21.83
@@ -23570,7 +23570,7 @@
         "comb": 19.06
       },
       "300 AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.34,
         "highway": 26.91,
         "comb": 21.41
@@ -23596,13 +23596,13 @@
         "comb": 16.91
       },
       "Charger": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.0,
         "highway": 30.1,
         "comb": 22.78
       },
       "Charger AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.34,
         "highway": 26.91,
         "comb": 21.41
@@ -23650,7 +23650,7 @@
         "comb": 19.94
       },
       "Journey": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.55,
         "highway": 24.82,
         "comb": 19.47
@@ -23812,7 +23812,7 @@
         "comb": 16.37
       },
       "Explorer 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.93,
         "highway": 24.3,
         "comb": 19.6
@@ -23824,7 +23824,7 @@
         "comb": 20.73
       },
       "Explorer AWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.33,
         "highway": 22.51,
         "comb": 18.63
@@ -23860,13 +23860,13 @@
         "comb": 17.0
       },
       "F150 5.0L 2WD FFV GVWR>7599 LBS PAYLOAD PACKAGE": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.0,
         "highway": 20.0,
         "comb": 16.0
       },
       "F150 5.0L 4WD FFV GVWR>7599 LBS PAYLOAD PACKAGE": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.0,
         "highway": 19.0,
         "comb": 16.0
@@ -23878,7 +23878,7 @@
         "comb": 19.59
       },
       "F150 Pickup 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.31,
         "highway": 22.25,
         "comb": 17.81
@@ -23890,7 +23890,7 @@
         "comb": 18.31
       },
       "F150 Pickup 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.81,
         "highway": 20.88,
         "comb": 17.04
@@ -23938,7 +23938,7 @@
         "comb": 31.85
       },
       "Focus FWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 25.62,
         "highway": 36.0,
         "comb": 29.32
@@ -24004,7 +24004,7 @@
         "comb": 19.0
       },
       "Taurus AWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.3,
         "highway": 23.84,
         "comb": 19.0
@@ -24016,7 +24016,7 @@
         "comb": 21.0
       },
       "Taurus FWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.0,
         "highway": 27.0,
         "comb": 21.0
@@ -24028,13 +24028,13 @@
         "comb": 22.61
       },
       "Transit Connect Van FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.88,
         "highway": 27.16,
         "comb": 22.61
       },
       "Transit Connect Wagon FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.0,
         "highway": 26.58,
         "comb": 21.8
@@ -24046,7 +24046,7 @@
         "comb": 21.8
       },
       "Transit Connect Wagon LWB FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.0,
         "highway": 26.58,
         "comb": 21.8
@@ -24064,7 +24064,7 @@
         "comb": 16.13
       },
       "Transit T150 Wagon FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.08,
         "highway": 17.95,
         "comb": 15.59
@@ -24724,7 +24724,7 @@
         "comb": 25.39
       },
       "Renegade 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 21.75,
         "highway": 30.16,
         "comb": 24.87
@@ -26490,13 +26490,13 @@
     },
     "Ram": {
       "1500 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.97,
         "highway": 24.6,
         "comb": 19.72
       },
       "1500 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.18,
         "highway": 23.11,
         "comb": 18.7
@@ -26940,7 +26940,7 @@
         "comb": 14.38
       },
       "Sequoia 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.78,
         "highway": 17.47,
         "comb": 14.54
@@ -26982,7 +26982,7 @@
         "comb": 16.55
       },
       "Tundra 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.0,
         "highway": 18.37,
         "comb": 15.4
@@ -26994,7 +26994,7 @@
         "comb": 15.81
       },
       "Tundra 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.21,
         "highway": 17.0,
         "comb": 14.92
@@ -28378,13 +28378,13 @@
         "comb": 31.0
       },
       "Equinox AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 20.42,
         "highway": 28.25,
         "comb": 23.33
       },
       "Equinox FWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 21.0,
         "highway": 31.39,
         "comb": 25.0
@@ -28402,7 +28402,7 @@
         "comb": 12.42
       },
       "Impala": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.78,
         "highway": 28.25,
         "comb": 22.12
@@ -28450,7 +28450,7 @@
         "comb": 17.0
       },
       "Silverado K15 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.68,
         "highway": 22.24,
         "comb": 18.79
@@ -28486,25 +28486,25 @@
         "comb": 32.0
       },
       "Suburban C1500 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.95,
         "highway": 23.44,
         "comb": 18.63
       },
       "Suburban K1500 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.38,
         "highway": 21.71,
         "comb": 17.71
       },
       "Tahoe C1500 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.95,
         "highway": 23.44,
         "comb": 18.63
       },
       "Tahoe K1500 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.58,
         "highway": 21.78,
         "comb": 17.87
@@ -28542,25 +28542,25 @@
     },
     "Chrysler": {
       "200": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.0,
         "highway": 30.92,
         "comb": 22.99
       },
       "200 AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.34,
         "highway": 28.45,
         "comb": 21.83
       },
       "300": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.0,
         "highway": 30.1,
         "comb": 22.78
       },
       "300 AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.34,
         "highway": 26.91,
         "comb": 21.41
@@ -28598,13 +28598,13 @@
         "comb": 16.91
       },
       "Charger": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.0,
         "highway": 30.1,
         "comb": 22.78
       },
       "Charger AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.34,
         "highway": 26.91,
         "comb": 21.41
@@ -28628,13 +28628,13 @@
         "comb": 21.45
       },
       "Grand Caravan": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.15,
         "highway": 24.89,
         "comb": 19.94
       },
       "Journey": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.55,
         "highway": 24.82,
         "comb": 19.47
@@ -28778,7 +28778,7 @@
         "comb": 24.89
       },
       "Escape FWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 21.18,
         "highway": 29.15,
         "comb": 24.15
@@ -28808,7 +28808,7 @@
         "comb": 16.36
       },
       "Explorer 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.93,
         "highway": 24.3,
         "comb": 19.6
@@ -28820,7 +28820,7 @@
         "comb": 18.34
       },
       "Explorer AWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.33,
         "highway": 22.51,
         "comb": 18.63
@@ -28868,19 +28868,19 @@
         "comb": 19.0
       },
       "F150 4WD FFV BASE PAYLOAD LT TIRE": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.81,
         "highway": 20.0,
         "comb": 17.05
       },
       "F150 5.0L 2WD FFV GVWR>7599 LBS": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.0,
         "highway": 20.0,
         "comb": 16.0
       },
       "F150 5.0L 4WD FFV GVWR>7599 LBS": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.0,
         "highway": 19.0,
         "comb": 16.0
@@ -28892,7 +28892,7 @@
         "comb": 20.78
       },
       "F150 Pickup 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.89,
         "highway": 24.25,
         "comb": 20.28
@@ -28904,7 +28904,7 @@
         "comb": 19.56
       },
       "F150 Pickup 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.03,
         "highway": 22.54,
         "comb": 19.13
@@ -28958,7 +28958,7 @@
         "comb": 28.23
       },
       "Focus FWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 24.86,
         "highway": 33.83,
         "comb": 28.23
@@ -29036,7 +29036,7 @@
         "comb": 19.0
       },
       "Taurus AWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.3,
         "highway": 23.84,
         "comb": 19.0
@@ -29048,7 +29048,7 @@
         "comb": 21.0
       },
       "Taurus FWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.0,
         "highway": 27.49,
         "comb": 21.0
@@ -29060,13 +29060,13 @@
         "comb": 22.58
       },
       "Transit Connect Van FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.89,
         "highway": 27.16,
         "comb": 22.61
       },
       "Transit Connect Wagon FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.44,
         "highway": 26.78,
         "comb": 22.17
@@ -29078,7 +29078,7 @@
         "comb": 21.8
       },
       "Transit Connect Wagon LWB FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.0,
         "highway": 26.66,
         "comb": 21.82
@@ -29096,7 +29096,7 @@
         "comb": 16.1
       },
       "Transit T150 Wagon FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.1,
         "highway": 17.89,
         "comb": 15.59
@@ -29182,7 +29182,7 @@
         "comb": 17.0
       },
       "Sierra K15 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.65,
         "highway": 22.2,
         "comb": 18.76
@@ -29200,31 +29200,31 @@
         "comb": 18.16
       },
       "Terrain FWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 21.0,
         "highway": 31.39,
         "comb": 25.0
       },
       "Yukon C1500 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.95,
         "highway": 23.44,
         "comb": 18.63
       },
       "Yukon C1500 XL 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.95,
         "highway": 23.44,
         "comb": 18.63
       },
       "Yukon K1500 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.58,
         "highway": 21.78,
         "comb": 17.87
       },
       "Yukon K1500 XL 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.38,
         "highway": 21.71,
         "comb": 17.71
@@ -29896,7 +29896,7 @@
         "comb": 25.39
       },
       "Renegade 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 21.75,
         "highway": 30.16,
         "comb": 24.87
@@ -31320,7 +31320,7 @@
         "comb": 18.52
       },
       "Frontier 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.75,
         "highway": 21.99,
         "comb": 18.05
@@ -31332,7 +31332,7 @@
         "comb": 17.51
       },
       "Frontier 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.06,
         "highway": 20.54,
         "comb": 17.12
@@ -31756,13 +31756,13 @@
     },
     "Ram": {
       "1500 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.97,
         "highway": 24.6,
         "comb": 19.72
       },
       "1500 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.18,
         "highway": 23.11,
         "comb": 18.7
@@ -32186,7 +32186,7 @@
         "comb": 14.39
       },
       "Sequoia 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.84,
         "highway": 17.0,
         "comb": 14.0
@@ -32228,7 +32228,7 @@
         "comb": 15.01
       },
       "Tundra 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.0,
         "highway": 18.18,
         "comb": 15.28
@@ -32240,7 +32240,7 @@
         "comb": 14.58
       },
       "Tundra 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.09,
         "highway": 17.39,
         "comb": 14.73
@@ -33740,7 +33740,7 @@
         "comb": 17.0
       },
       "Silverado K15 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.93,
         "highway": 21.9,
         "comb": 18.16
@@ -33776,13 +33776,13 @@
         "comb": 32.0
       },
       "Suburban C1500 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.0,
         "highway": 23.38,
         "comb": 19.17
       },
       "Suburban K1500 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.35,
         "highway": 21.58,
         "comb": 17.64
@@ -33794,7 +33794,7 @@
         "comb": 17.17
       },
       "Tahoe K1500 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.58,
         "highway": 21.78,
         "comb": 17.87
@@ -33838,7 +33838,7 @@
         "comb": 19.06
       },
       "300 AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.34,
         "highway": 26.91,
         "comb": 21.41
@@ -33882,7 +33882,7 @@
         "comb": 18.24
       },
       "Charger AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.34,
         "highway": 26.91,
         "comb": 21.41
@@ -33918,7 +33918,7 @@
         "comb": 19.94
       },
       "Journey": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.55,
         "highway": 24.82,
         "comb": 19.47
@@ -34056,7 +34056,7 @@
         "comb": 24.15
       },
       "Escape FWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 21.18,
         "highway": 29.15,
         "comb": 24.15
@@ -34086,7 +34086,7 @@
         "comb": 18.29
       },
       "Explorer 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.88,
         "highway": 24.12,
         "comb": 19.52
@@ -34098,7 +34098,7 @@
         "comb": 18.3
       },
       "Explorer AWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.18,
         "highway": 22.11,
         "comb": 18.4
@@ -34128,13 +34128,13 @@
         "comb": 21.0
       },
       "F150 2WD FFV BASE PAYLOAD LT": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.0,
         "highway": 21.0,
         "comb": 18.0
       },
       "F150 2WD FFV BASE PAYLOAD LT TIRE": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.49,
         "highway": 24.0,
         "comb": 21.0
@@ -34158,19 +34158,19 @@
         "comb": 19.0
       },
       "F150 4WD FFV BASE PAYLOAD LT": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.57,
         "highway": 20.0,
         "comb": 17.0
       },
       "F150 4WD FFV BASE PAYLOAD LT TIRE": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.0,
         "highway": 22.0,
         "comb": 19.0
       },
       "F150 5.0L 2WD FFV GVWR>7599 LBS": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.0,
         "highway": 20.0,
         "comb": 17.0
@@ -34182,7 +34182,7 @@
         "comb": 17.0
       },
       "F150 5.0L 4WD FFV GVWR>7599 LBS": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.13,
         "highway": 19.0,
         "comb": 17.17
@@ -34200,7 +34200,7 @@
         "comb": 19.2
       },
       "F150 Pickup 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.95,
         "highway": 23.36,
         "comb": 19.34
@@ -34212,7 +34212,7 @@
         "comb": 18.32
       },
       "F150 Pickup 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.63,
         "highway": 21.6,
         "comb": 17.85
@@ -34332,7 +34332,7 @@
         "comb": 19.0
       },
       "Taurus AWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.3,
         "highway": 23.84,
         "comb": 19.0
@@ -34344,7 +34344,7 @@
         "comb": 21.0
       },
       "Taurus FWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.0,
         "highway": 27.49,
         "comb": 21.0
@@ -34356,13 +34356,13 @@
         "comb": 22.59
       },
       "Transit Connect Van FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.88,
         "highway": 27.15,
         "comb": 22.6
       },
       "Transit Connect Wagon FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.15,
         "highway": 26.77,
         "comb": 21.96
@@ -34374,7 +34374,7 @@
         "comb": 21.96
       },
       "Transit Connect Wagon LWB FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 19.15,
         "highway": 26.77,
         "comb": 21.96
@@ -34392,7 +34392,7 @@
         "comb": 15.59
       },
       "Transit T150 Wagon FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.1,
         "highway": 17.9,
         "comb": 15.59
@@ -34454,7 +34454,7 @@
         "comb": 17.0
       },
       "Sierra K15 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.96,
         "highway": 21.9,
         "comb": 18.18
@@ -34478,25 +34478,25 @@
         "comb": 27.69
       },
       "Yukon C1500 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.0,
         "highway": 23.38,
         "comb": 19.17
       },
       "Yukon C1500 XL 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.0,
         "highway": 23.38,
         "comb": 19.17
       },
       "Yukon K1500 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.58,
         "highway": 21.78,
         "comb": 17.87
       },
       "Yukon K1500 XL 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.35,
         "highway": 21.58,
         "comb": 17.64
@@ -36758,7 +36758,7 @@
         "comb": 18.52
       },
       "Frontier 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.76,
         "highway": 22.02,
         "comb": 18.07
@@ -36770,7 +36770,7 @@
         "comb": 17.51
       },
       "Frontier 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.11,
         "highway": 20.54,
         "comb": 17.15
@@ -37282,13 +37282,13 @@
     },
     "Ram": {
       "1500 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.97,
         "highway": 24.6,
         "comb": 19.72
       },
       "1500 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.18,
         "highway": 23.11,
         "comb": 18.7
@@ -37700,7 +37700,7 @@
         "comb": 14.45
       },
       "Sequoia 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 12.75,
         "highway": 17.19,
         "comb": 14.42
@@ -37748,7 +37748,7 @@
         "comb": 14.48
       },
       "Tundra 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.14,
         "highway": 17.07,
         "comb": 14.66
@@ -39216,7 +39216,7 @@
         "comb": 46.37
       },
       "Silverado C10 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.97,
         "highway": 19.81,
         "comb": 16.82
@@ -39350,7 +39350,7 @@
         "comb": 19.06
       },
       "300 AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.34,
         "highway": 26.91,
         "comb": 21.41
@@ -39430,7 +39430,7 @@
         "comb": 19.94
       },
       "Journey": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.55,
         "highway": 24.82,
         "comb": 19.47
@@ -39568,7 +39568,7 @@
         "comb": 26.13
       },
       "Escape FWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 21.18,
         "highway": 29.15,
         "comb": 24.15
@@ -39598,7 +39598,7 @@
         "comb": 18.0
       },
       "Explorer 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.93,
         "highway": 24.17,
         "comb": 19.57
@@ -39610,7 +39610,7 @@
         "comb": 18.6
       },
       "Explorer AWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.24,
         "highway": 22.19,
         "comb": 18.47
@@ -39640,7 +39640,7 @@
         "comb": 19.0
       },
       "F150 2WD FFV BASE PAYLOAD LT": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.0,
         "highway": 21.0,
         "comb": 18.0
@@ -39664,19 +39664,19 @@
         "comb": 18.0
       },
       "F150 4WD FFV BASE PAYLOAD LT": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.0,
         "highway": 20.0,
         "comb": 17.0
       },
       "F150 5.0L 2WD FFV GVWR>7599 LBS": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.0,
         "highway": 20.0,
         "comb": 17.0
       },
       "F150 5.0L 4WD FFV GVWR>7599 LBS": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.0,
         "highway": 19.0,
         "comb": 16.0
@@ -39688,7 +39688,7 @@
         "comb": 20.78
       },
       "F150 Pickup 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.87,
         "highway": 23.11,
         "comb": 19.2
@@ -39706,7 +39706,7 @@
         "comb": 18.82
       },
       "F150 Pickup 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.64,
         "highway": 21.55,
         "comb": 17.84
@@ -39844,7 +39844,7 @@
         "comb": 19.0
       },
       "Taurus AWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.78,
         "highway": 24.0,
         "comb": 19.0
@@ -39856,7 +39856,7 @@
         "comb": 20.8
       },
       "Taurus FWD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.79,
         "highway": 26.21,
         "comb": 20.8
@@ -39874,13 +39874,13 @@
         "comb": 25.2
       },
       "Transit Connect Van FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 24.02,
         "highway": 26.8,
         "comb": 25.2
       },
       "Transit Connect Wagon LWB FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 23.67,
         "highway": 28.64,
         "comb": 25.67
@@ -39898,7 +39898,7 @@
         "comb": 15.45
       },
       "Transit T150 Wagon FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.95,
         "highway": 17.8,
         "comb": 15.45
@@ -39936,7 +39936,7 @@
         "comb": 15.43
       },
       "Sierra C10 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.97,
         "highway": 19.81,
         "comb": 16.82
@@ -42352,7 +42352,7 @@
         "comb": 18.52
       },
       "Frontier 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.74,
         "highway": 22.0,
         "comb": 18.05
@@ -42364,7 +42364,7 @@
         "comb": 17.51
       },
       "Frontier 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.08,
         "highway": 20.51,
         "comb": 17.12
@@ -42880,13 +42880,13 @@
         "comb": 21.24
       },
       "1500 Classic 2WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.97,
         "highway": 24.6,
         "comb": 19.72
       },
       "1500 Classic 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.18,
         "highway": 23.11,
         "comb": 18.7
@@ -43432,7 +43432,7 @@
         "comb": 14.47
       },
       "Tundra 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 13.1,
         "highway": 17.01,
         "comb": 14.62
@@ -44980,7 +44980,7 @@
         "comb": 25.37
       },
       "Impala": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 18.41,
         "highway": 27.57,
         "comb": 21.65
@@ -45368,7 +45368,7 @@
         "comb": 20.46
       },
       "Explorer FFV AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.03,
         "highway": 23.0,
         "comb": 18.71
@@ -45392,13 +45392,13 @@
         "comb": 24.22
       },
       "F150 2WD FFV BASE PAYLOAD LT": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.0,
         "highway": 21.0,
         "comb": 18.0
       },
       "F150 5.0L 2WD FFV GVWR>7599 LBS": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.0,
         "highway": 20.0,
         "comb": 17.0
@@ -45410,7 +45410,7 @@
         "comb": 22.1
       },
       "F150 Pickup 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.73,
         "highway": 22.85,
         "comb": 19.02
@@ -45428,7 +45428,7 @@
         "comb": 20.38
       },
       "F150 Pickup 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.44,
         "highway": 21.04,
         "comb": 17.54
@@ -45560,13 +45560,13 @@
         "comb": 22.27
       },
       "Transit Connect Van FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 24.02,
         "highway": 26.8,
         "comb": 25.2
       },
       "Transit Connect Wagon LWB FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 23.67,
         "highway": 28.64,
         "comb": 25.67
@@ -45578,13 +45578,13 @@
         "comb": 22.21
       },
       "Transit T150 Wagon 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.86,
         "highway": 19.45,
         "comb": 16.62
       },
       "Transit T150 Wagon 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.15,
         "highway": 18.52,
         "comb": 15.83
@@ -45622,7 +45622,7 @@
         "comb": 19.83
       },
       "Sierra 4WD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.47,
         "highway": 18.96,
         "comb": 16.2
@@ -50934,7 +50934,7 @@
         "comb": 22.85
       },
       "Explorer FFV AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.25,
         "highway": 23.44,
         "comb": 18.86
@@ -50970,7 +50970,7 @@
         "comb": 20.31
       },
       "F150 Pickup 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.54,
         "highway": 23.87,
         "comb": 19.19
@@ -50988,7 +50988,7 @@
         "comb": 19.97
       },
       "F150 Pickup 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.83,
         "highway": 22.0,
         "comb": 18.29
@@ -51132,7 +51132,7 @@
         "comb": 22.27
       },
       "Transit Connect Van FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 24.02,
         "highway": 26.71,
         "comb": 25.16
@@ -51144,7 +51144,7 @@
         "comb": 25.16
       },
       "Transit Connect Wagon LWB FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 23.67,
         "highway": 28.64,
         "comb": 25.67
@@ -51156,13 +51156,13 @@
         "comb": 25.67
       },
       "Transit T150 Wagon 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.72,
         "highway": 19.22,
         "comb": 16.46
       },
       "Transit T150 Wagon 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.11,
         "highway": 18.33,
         "comb": 15.74
@@ -56670,7 +56670,7 @@
         "comb": 22.38
       },
       "Explorer FFV AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.25,
         "highway": 23.57,
         "comb": 18.89
@@ -56736,7 +56736,7 @@
         "comb": 20.23
       },
       "F150 Pickup 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.58,
         "highway": 23.94,
         "comb": 19.24
@@ -56754,7 +56754,7 @@
         "comb": 19.44
       },
       "F150 Pickup 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.96,
         "highway": 22.0,
         "comb": 18.49
@@ -56916,7 +56916,7 @@
         "comb": 22.46
       },
       "Transit Connect Van FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 23.97,
         "highway": 26.5,
         "comb": 25.05
@@ -56928,7 +56928,7 @@
         "comb": 25.06
       },
       "Transit Connect Wagon LWB FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 23.6,
         "highway": 28.45,
         "comb": 25.56
@@ -56940,13 +56940,13 @@
         "comb": 25.56
       },
       "Transit T150 Wagon 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.79,
         "highway": 19.3,
         "comb": 16.53
       },
       "Transit T150 Wagon 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 14.14,
         "highway": 18.39,
         "comb": 15.78
@@ -62644,7 +62644,7 @@
         "comb": 19.57
       },
       "Explorer FFV AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.3,
         "highway": 24.69,
         "comb": 19.99
@@ -62710,7 +62710,7 @@
         "comb": 20.54
       },
       "F150 Pickup 2WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.52,
         "highway": 23.72,
         "comb": 19.13
@@ -62728,7 +62728,7 @@
         "comb": 19.72
       },
       "F150 Pickup 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 16.9,
         "highway": 22.23,
         "comb": 18.95
@@ -62746,7 +62746,7 @@
         "comb": 17.89
       },
       "F150 Pickup Tremor 4WD FFV": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.29,
         "highway": 19.94,
         "comb": 17.08
@@ -68780,7 +68780,7 @@
         "comb": 20.17
       },
       "Explorer FFV AWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 17.23,
         "highway": 24.0,
         "comb": 19.92
@@ -74504,7 +74504,7 @@
         "comb": 27.11
       },
       "Encore GX FWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 30.38,
         "highway": 31.35,
         "comb": 30.0
@@ -74516,7 +74516,7 @@
         "comb": 24.0
       },
       "Envista": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 28.35,
         "highway": 32.0,
         "comb": 30.19
@@ -74892,7 +74892,7 @@
         "comb": 27.0
       },
       "Trailblazer FWD": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 30.38,
         "highway": 31.35,
         "comb": 30.0
@@ -80642,7 +80642,7 @@
         "comb": 30.0
       },
       "Encore GX FWD (Flex Fuel)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 30.07,
         "highway": 31.08,
         "comb": 30.0
@@ -80660,7 +80660,7 @@
         "comb": 30.0
       },
       "Envista (Flex Fuel)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 28.35,
         "highway": 32.0,
         "comb": 30.19
@@ -80994,7 +80994,7 @@
         "comb": 16.71
       },
       "Silverado 4WD  (Flex Fuel)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.43,
         "highway": 19.24,
         "comb": 16.94
@@ -81072,7 +81072,7 @@
         "comb": 16.05
       },
       "Silverado Mud Terrain Tires 4WD  (Flex Fuel)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.43,
         "highway": 19.24,
         "comb": 16.94
@@ -81126,7 +81126,7 @@
         "comb": 31.0
       },
       "Trailblazer FWD (Flex Fuel)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 30.07,
         "highway": 31.08,
         "comb": 30.0
@@ -81150,7 +81150,7 @@
         "comb": 28.99
       },
       "Trax (Flex Fuel)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 28.0,
         "highway": 32.0,
         "comb": 30.0
@@ -81382,7 +81382,7 @@
         "comb": 16.12
       },
       "Sierra 4WD (Flex Fuel)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.43,
         "highway": 19.24,
         "comb": 16.94
@@ -81448,7 +81448,7 @@
         "comb": 15.65
       },
       "Sierra Mud Terrain Tires 4WD (Flex Fuel)": {
-        "fuelType": "Gasoline or E85",
+        "fuelType": "Regular",
         "city": 15.43,
         "highway": 19.24,
         "comb": 16.94

@@ -22,13 +22,15 @@ function updateDriveMixLabel() {
 
 document.getElementById('addVehicleButton').addEventListener('click', function() {
     const gasPrice = parseFloat(document.getElementById('gasPrice').value);
+    const premiumGasPrice = parseFloat(document.getElementById('premiumGasPrice').value);
     const electricPrice = parseFloat(document.getElementById('electricPrice').value);
     const milesYear = document.getElementById('milesYear').value;
     const yearsOwnership = document.getElementById('yearsOwnership').value;
 
     // Rates and Usage Input Validation (exists)
     const missingFields = [];
-    if (!gasPrice) missingFields.push('Gas Price');
+    if (!gasPrice) missingFields.push('Regular Gas Price');
+    if (!premiumGasPrice) missingFields.push('Premium Gas Price');
     if (!electricPrice) missingFields.push('Electric Price');
     if (!milesYear) missingFields.push('Miles per Year');
     if (!yearsOwnership) missingFields.push('Years of Ownership');
@@ -40,7 +42,8 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
 
     // Rates and Usage Input Validation (Non-Negative)
     const invalidFields = [];
-    if (gasPrice <= 0) invalidFields.push('Gas Price');
+    if (gasPrice <= 0) invalidFields.push('Regular Gas Price');
+    if (premiumGasPrice <= 0) invalidFields.push('Premium Gas Price');
     if (electricPrice <= 0) invalidFields.push('Electric Price');
     if (milesYear <= 0) invalidFields.push('Miles per Year');
     if (yearsOwnership <= 0) invalidFields.push('Years of Ownership');
@@ -140,7 +143,7 @@ function renderVehicleList() {
         } else {
             labelText = `${index + 1}. ${displayName}`;
             badge.textContent = `${blended.toFixed(1)} MPG`;
-            badge.classList.add('gas');
+            badge.classList.add(vehicle.type === 'premium' ? 'premium' : 'gas');
         }
 
         const labelSpan = document.createElement('span');
@@ -246,7 +249,7 @@ function refreshIfVehicles() {
     updateBarChart();
 }
 
-['gasPrice', 'electricPrice', 'milesYear', 'yearsOwnership'].forEach(function(id) {
+['gasPrice', 'premiumGasPrice', 'electricPrice', 'milesYear', 'yearsOwnership'].forEach(function(id) {
     document.getElementById(id).addEventListener('input', refreshIfVehicles);
 });
 
@@ -311,7 +314,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 const vehicle = data[selectedYear][selectedMake][selectedModel];
                 const hwPct = parseInt(document.getElementById('driveMixSlider').value) / 100;
                 efficiencyOutput.value = parseFloat((vehicle.city * (1 - hwPct) + vehicle.highway * hwPct).toFixed(4));
-                vehicleType.value = vehicle.fuelType.toLowerCase().includes('electric') ? 'electric' : 'gas';
+                const ft = vehicle.fuelType.toLowerCase();
+                if (ft.includes('electric')) {
+                    vehicleType.value = 'electric';
+                } else if (ft.includes('premium')) {
+                    vehicleType.value = 'premium';
+                } else {
+                    vehicleType.value = 'gas';
+                }
             });
         })
         .catch(function() {
@@ -323,6 +333,7 @@ function updateLineChart() {
     const yearsOwnership = parseInt(document.getElementById('yearsOwnership').value) || 0;
     const milesYear = document.getElementById('milesYear').value;
     const gasPrice = document.getElementById('gasPrice').value;
+    const premiumGasPrice = document.getElementById('premiumGasPrice').value;
     const electricPrice = document.getElementById('electricPrice').value;
 
     const lineSeries = vehicles.map(function(vehicle) {
@@ -330,7 +341,9 @@ function updateLineChart() {
         const blended = getBlendedEfficiency(vehicle);
         for (let year = 1; year <= yearsOwnership; year++) {
             let cost;
-            if (vehicle.type === 'gas') {
+            if (vehicle.type === 'premium') {
+                cost = (milesYear / blended) * premiumGasPrice * year;
+            } else if (vehicle.type === 'gas') {
                 cost = (milesYear / blended) * gasPrice * year;
             } else {
                 cost = (milesYear / blended) * electricPrice * year;
@@ -425,34 +438,34 @@ function updateBarChart() {
     }]);
 }
 
-// State-level average fuel prices (EIA 2024 data, gas $/gal, electric $/kWh)
+// State-level average fuel prices (EIA 2024 data, regular $/gal, premium $/gal, electric $/kWh)
 const STATE_PRICES = {
-    AK: { gas: 3.65, electric: 0.24 }, AL: { gas: 2.95, electric: 0.13 },
-    AR: { gas: 2.90, electric: 0.11 }, AZ: { gas: 3.45, electric: 0.13 },
-    CA: { gas: 4.70, electric: 0.27 }, CO: { gas: 3.25, electric: 0.14 },
-    CT: { gas: 3.45, electric: 0.28 }, DC: { gas: 3.30, electric: 0.14 },
-    DE: { gas: 3.05, electric: 0.14 }, FL: { gas: 3.20, electric: 0.14 },
-    GA: { gas: 2.90, electric: 0.13 }, HI: { gas: 4.80, electric: 0.39 },
-    IA: { gas: 3.00, electric: 0.12 }, ID: { gas: 3.35, electric: 0.11 },
-    IL: { gas: 3.50, electric: 0.15 }, IN: { gas: 3.15, electric: 0.14 },
-    KS: { gas: 2.95, electric: 0.13 }, KY: { gas: 2.95, electric: 0.12 },
-    LA: { gas: 2.90, electric: 0.10 }, MA: { gas: 3.25, electric: 0.26 },
-    MD: { gas: 3.15, electric: 0.16 }, ME: { gas: 3.30, electric: 0.22 },
-    MI: { gas: 3.20, electric: 0.17 }, MN: { gas: 3.10, electric: 0.14 },
-    MO: { gas: 2.90, electric: 0.12 }, MS: { gas: 2.85, electric: 0.13 },
-    MT: { gas: 3.25, electric: 0.12 }, NC: { gas: 3.00, electric: 0.12 },
-    ND: { gas: 3.05, electric: 0.12 }, NE: { gas: 3.05, electric: 0.11 },
-    NH: { gas: 3.15, electric: 0.25 }, NJ: { gas: 3.25, electric: 0.18 },
-    NM: { gas: 3.00, electric: 0.14 }, NV: { gas: 3.80, electric: 0.12 },
-    NY: { gas: 3.50, electric: 0.21 }, OH: { gas: 3.15, electric: 0.13 },
-    OK: { gas: 2.85, electric: 0.11 }, OR: { gas: 3.80, electric: 0.12 },
-    PA: { gas: 3.35, electric: 0.16 }, RI: { gas: 3.20, electric: 0.26 },
-    SC: { gas: 2.95, electric: 0.13 }, SD: { gas: 3.10, electric: 0.12 },
-    TN: { gas: 2.95, electric: 0.12 }, TX: { gas: 2.85, electric: 0.13 },
-    UT: { gas: 3.35, electric: 0.11 }, VA: { gas: 3.10, electric: 0.13 },
-    VT: { gas: 3.25, electric: 0.19 }, WA: { gas: 4.00, electric: 0.11 },
-    WI: { gas: 3.10, electric: 0.16 }, WV: { gas: 3.10, electric: 0.12 },
-    WY: { gas: 3.20, electric: 0.10 }
+    AK: { gas: 3.65, premium: 4.20, electric: 0.24 }, AL: { gas: 2.95, premium: 3.50, electric: 0.13 },
+    AR: { gas: 2.90, premium: 3.45, electric: 0.11 }, AZ: { gas: 3.45, premium: 4.00, electric: 0.13 },
+    CA: { gas: 4.70, premium: 5.25, electric: 0.27 }, CO: { gas: 3.25, premium: 3.80, electric: 0.14 },
+    CT: { gas: 3.45, premium: 4.00, electric: 0.28 }, DC: { gas: 3.30, premium: 3.85, electric: 0.14 },
+    DE: { gas: 3.05, premium: 3.60, electric: 0.14 }, FL: { gas: 3.20, premium: 3.75, electric: 0.14 },
+    GA: { gas: 2.90, premium: 3.45, electric: 0.13 }, HI: { gas: 4.80, premium: 5.35, electric: 0.39 },
+    IA: { gas: 3.00, premium: 3.55, electric: 0.12 }, ID: { gas: 3.35, premium: 3.90, electric: 0.11 },
+    IL: { gas: 3.50, premium: 4.05, electric: 0.15 }, IN: { gas: 3.15, premium: 3.70, electric: 0.14 },
+    KS: { gas: 2.95, premium: 3.50, electric: 0.13 }, KY: { gas: 2.95, premium: 3.50, electric: 0.12 },
+    LA: { gas: 2.90, premium: 3.45, electric: 0.10 }, MA: { gas: 3.25, premium: 3.80, electric: 0.26 },
+    MD: { gas: 3.15, premium: 3.70, electric: 0.16 }, ME: { gas: 3.30, premium: 3.85, electric: 0.22 },
+    MI: { gas: 3.20, premium: 3.75, electric: 0.17 }, MN: { gas: 3.10, premium: 3.65, electric: 0.14 },
+    MO: { gas: 2.90, premium: 3.45, electric: 0.12 }, MS: { gas: 2.85, premium: 3.40, electric: 0.13 },
+    MT: { gas: 3.25, premium: 3.80, electric: 0.12 }, NC: { gas: 3.00, premium: 3.55, electric: 0.12 },
+    ND: { gas: 3.05, premium: 3.60, electric: 0.12 }, NE: { gas: 3.05, premium: 3.60, electric: 0.11 },
+    NH: { gas: 3.15, premium: 3.70, electric: 0.25 }, NJ: { gas: 3.25, premium: 3.80, electric: 0.18 },
+    NM: { gas: 3.00, premium: 3.55, electric: 0.14 }, NV: { gas: 3.80, premium: 4.35, electric: 0.12 },
+    NY: { gas: 3.50, premium: 4.05, electric: 0.21 }, OH: { gas: 3.15, premium: 3.70, electric: 0.13 },
+    OK: { gas: 2.85, premium: 3.40, electric: 0.11 }, OR: { gas: 3.80, premium: 4.35, electric: 0.12 },
+    PA: { gas: 3.35, premium: 3.90, electric: 0.16 }, RI: { gas: 3.20, premium: 3.75, electric: 0.26 },
+    SC: { gas: 2.95, premium: 3.50, electric: 0.13 }, SD: { gas: 3.10, premium: 3.65, electric: 0.12 },
+    TN: { gas: 2.95, premium: 3.50, electric: 0.12 }, TX: { gas: 2.85, premium: 3.40, electric: 0.13 },
+    UT: { gas: 3.35, premium: 3.90, electric: 0.11 }, VA: { gas: 3.10, premium: 3.65, electric: 0.13 },
+    VT: { gas: 3.25, premium: 3.80, electric: 0.19 }, WA: { gas: 4.00, premium: 4.55, electric: 0.11 },
+    WI: { gas: 3.10, premium: 3.65, electric: 0.16 }, WV: { gas: 3.10, premium: 3.65, electric: 0.12 },
+    WY: { gas: 3.20, premium: 3.75, electric: 0.10 }
 };
 
 const STATE_NAME_TO_CODE = {
@@ -518,6 +531,7 @@ async function autofillFuelPrices() {
     }
 
     document.getElementById('gasPrice').value = prices.gas;
+    document.getElementById('premiumGasPrice').value = prices.premium;
     document.getElementById('electricPrice').value = prices.electric;
     refreshIfVehicles();
     resetBtn(`Filled for ${stateCode} (2024 avg)`);

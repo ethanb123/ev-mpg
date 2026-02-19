@@ -32,9 +32,15 @@
             <h1>Fuel Prices</h1>
 
             <div class="input-field">
-                <span class="info-icon" onclick="showTooltip('gasPriceTip')">Gasoline Price per Gallon</span>
+                <span class="info-icon" onclick="showTooltip('gasPriceTip')">Regular Gas Price per Gallon</span>
                 <input type="number" id="gasPrice" name="gasPrice" placeholder="e.g., 3.48">
-                <div id="gasPriceTip" class="tooltip">Enter the current price of gasoline per gallon in US dollars.</div>
+                <div id="gasPriceTip" class="tooltip">Enter the current price of regular gasoline per gallon in US dollars.</div>
+            </div>
+
+            <div class="input-field">
+                <span class="info-icon" onclick="showTooltip('premiumGasPriceTip')">Premium Gas Price per Gallon</span>
+                <input type="number" id="premiumGasPrice" name="premiumGasPrice" placeholder="e.g., 4.03">
+                <div id="premiumGasPriceTip" class="tooltip">Enter the current price of premium gasoline per gallon in US dollars.</div>
             </div>
 
             <div class="input-field">
@@ -102,7 +108,8 @@
             <div id="manual" class="content-box hidden">
                 <select id="vehicleTypeManual">
                     <option value="" disabled selected>Select Fuel Type</option>
-                    <option value="gas">Gas Vehicle</option>
+                    <option value="gas">Regular Gas Vehicle</option>
+                    <option value="premium">Premium Gas Vehicle</option>
                     <option value="electric">Electric Vehicle</option>
                 </select>
                 <input type="text" id="vehicleEfficiencyManual" placeholder="Input MPG or mi/kWh">
