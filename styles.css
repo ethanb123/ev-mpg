@@ -369,12 +369,19 @@ input, select, button {
   }
   
 
-.slider-group {
+.slider-box {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 12px;
     margin-top: 10px;
     background-color: #f0f4f8;
+}
+
+.slider-title {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 4px;
 }
 
 .drive-mix-control {

@@ -91,28 +91,26 @@
         <div class="box" id="usageBox">
             <h1>Vehicle Usage</h1>
 
-            <div class="slider-group">
-                <div class="input-field">
-                    <span class="info-icon">Miles Driven Per Year</span>
-                    <input type="range" id="milesYear" name="milesYear" min="0" max="100000" step="1000" value="20000">
-                    <div id="milesYearLabel" class="mix-pct-label">20,000 miles/year</div>
-                </div>
+            <div class="slider-box">
+                <span class="info-icon slider-title">Miles Driven Per Year</span>
+                <input type="range" id="milesYear" name="milesYear" min="0" max="100000" step="1000" value="20000">
+                <div id="milesYearLabel" class="mix-pct-label">20,000 miles/year</div>
+            </div>
 
-                <div class="input-field">
-                    <span class="info-icon">Number of Years of Ownership</span>
-                    <input type="range" id="yearsOwnership" name="yearsOwnership" min="0" max="20" step="1" value="5">
-                    <div id="yearsOwnershipLabel" class="mix-pct-label">5 years</div>
-                </div>
+            <div class="slider-box">
+                <span class="info-icon slider-title">Number of Years of Ownership</span>
+                <input type="range" id="yearsOwnership" name="yearsOwnership" min="0" max="20" step="1" value="5">
+                <div id="yearsOwnershipLabel" class="mix-pct-label">5 years</div>
+            </div>
 
-                <div class="input-field">
-                    <span class="info-icon">Driving Mix</span>
-                    <div class="drive-mix-control">
-                        <span class="mix-label">City</span>
-                        <input type="range" id="driveMixSlider" min="0" max="100" value="50">
-                        <span class="mix-label">Highway</span>
-                    </div>
-                    <div id="driveMixLabel" class="mix-pct-label">50% City / 50% Highway</div>
+            <div class="slider-box">
+                <span class="info-icon slider-title">Driving Mix</span>
+                <div class="drive-mix-control">
+                    <span class="mix-label">City</span>
+                    <input type="range" id="driveMixSlider" min="0" max="100" value="50">
+                    <span class="mix-label">Highway</span>
                 </div>
+                <div id="driveMixLabel" class="mix-pct-label">50% City / 50% Highway</div>
             </div>
         </div>
 
