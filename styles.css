@@ -164,6 +164,19 @@ label {
     font-size: 1em;
 }
 
+#vehicleCityEfficiency::-webkit-inner-spin-button,
+#vehicleCityEfficiency::-webkit-outer-spin-button,
+#vehicleHighwayEfficiency::-webkit-inner-spin-button,
+#vehicleHighwayEfficiency::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#vehicleCityEfficiency,
+#vehicleHighwayEfficiency {
+    -moz-appearance: textfield;
+}
+
 input, select, button {
     margin-top: 5px;
     padding: 10px;
