@@ -77,12 +77,13 @@ body {
     margin: auto;
     text-align: center;
     padding-top: 0;
-    background-color: #269ffb;
+    background-color: #5cb85c;
     border-radius: 8px;
     width: 73%;
     margin-top: 15px;
     position: relative;
     height: 6vw;
+    color: white;
 }
 
 
@@ -418,6 +419,10 @@ input, select, button {
     padding: 0;
     margin: 5px 0 0 0;
     cursor: pointer;
+}
+
+input[type="range"] {
+    accent-color: #5cb85c;
 }
 
 .mix-label {
