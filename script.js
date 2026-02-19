@@ -101,6 +101,7 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
     document.getElementById('model-select').innerHTML = '<option>Select Model</option>';
     document.getElementById('vehicleEfficiency').value = '';
     document.getElementById('vehicleType').value = '';
+    document.getElementById('vehicleDetails').classList.add('hidden');
     document.getElementById('vehicleTypeManual').value = '';
     document.getElementById('vehicleEfficiencyManual').value = '';
 
@@ -302,6 +303,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 const selectedYear = yearSelect.value;
                 const makes = data[selectedYear];
                 makeSelect.innerHTML = '<option>Select Make</option>';
+                modelSelect.innerHTML = '<option>Select Model</option>';
+                document.getElementById('vehicleDetails').classList.add('hidden');
                 for (const make in makes) {
                     let option = new Option(make, make);
                     makeSelect.add(option);
@@ -313,6 +316,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const selectedMake = makeSelect.value;
                 const models = data[selectedYear][selectedMake];
                 modelSelect.innerHTML = '<option>Select Model</option>';
+                document.getElementById('vehicleDetails').classList.add('hidden');
                 for (const model in models) {
                     let option = new Option(model, model);
                     modelSelect.add(option);
@@ -334,6 +338,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 } else {
                     vehicleType.value = 'gas';
                 }
+                document.getElementById('vehicleDetails').classList.remove('hidden');
             });
         })
         .catch(function() {

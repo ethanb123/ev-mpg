@@ -90,11 +90,13 @@
                 <select id="model-select">
                     <option>Select Model</option>
                 </select>
-                <label for="vehicleEfficiency">Fuel Efficiency (MPG or EV-MPG)</label>
-                <input type="number" id="vehicleEfficiency" disabled>
+                <div id="vehicleDetails" class="hidden">
+                    <label for="vehicleEfficiency">Fuel Efficiency (MPG or EV-MPG)</label>
+                    <input type="number" id="vehicleEfficiency" disabled>
 
-                <label for="vehicleType">Fuel Type</label>
-                <input type="text" id="vehicleType" disabled>
+                    <label for="vehicleType">Fuel Type</label>
+                    <input type="text" id="vehicleType" disabled>
+                </div>
             </div>
             
             <div id="manual" class="content-box hidden">
