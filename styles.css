@@ -564,6 +564,10 @@ input[type="range"] {
         flex-direction: column;
     }
 
+    #vehicleBox {
+        min-height: 3em;
+    }
+
     #vehicleList li {
         min-height: 4em;
         flex-wrap: wrap;
