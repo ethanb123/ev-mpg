@@ -242,6 +242,25 @@ function renderVehicleList() {
         listItem.appendChild(removeButton);
         vehicleList.appendChild(listItem);
     });
+
+    // Scale legend
+    const legend = document.getElementById('vehicleListLegend');
+    if (vehicles.length === 0) {
+        legend.innerHTML = '';
+        return;
+    }
+    const ticks = 5;
+    let html = '<div class="list-legend">';
+    for (let i = 0; i < ticks; i++) {
+        const pct = (i / (ticks - 1)) * 100;
+        const val = Math.round(maxEff * pct / 100);
+        html += `<div class="list-legend-tick" style="left:${pct}%">
+            <div class="list-legend-line"></div>
+            <div class="list-legend-val">${val}</div>
+        </div>`;
+    }
+    html += '</div><div class="list-legend-label">MPGe ← fuel efficiency scale</div>';
+    legend.innerHTML = html;
 }
 
 // Selection Tabs

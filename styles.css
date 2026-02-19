@@ -130,6 +130,39 @@ input, select, button {
     margin-top: 2px;
 }
 
+.list-legend {
+    position: relative;
+    height: 22px;
+    border-top: 2px solid #bbb;
+    margin-top: 10px;
+}
+
+.list-legend-tick {
+    position: absolute;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.list-legend-line {
+    width: 1px;
+    height: 6px;
+    background: #999;
+    margin: 0 auto;
+}
+
+.list-legend-val {
+    font-size: 0.72em;
+    color: #555;
+    white-space: nowrap;
+}
+
+.list-legend-label {
+    font-size: 0.72em;
+    color: #888;
+    text-align: right;
+    margin-top: 2px;
+}
+
 .list-action-btn {
     width: auto;
     padding: 4px 10px;
