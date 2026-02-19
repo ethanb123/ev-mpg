@@ -1,6 +1,7 @@
 let vehicles = [];
 let manualVehicleCount = 0;
 let carData = null;
+let pendingAddVehicle = false;
 
 const CHART_COLORS = [
     '#008FFB', '#00E396', '#FEB019', '#FF4560', '#775DD0',
@@ -57,6 +58,7 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
     if (!electricPrice) missingFields.push('Home Price per kWh');
 
     if (missingFields.length > 0) {
+        pendingAddVehicle = true;
         document.getElementById('fuelPriceModal').classList.remove('hidden');
         return;
     }
@@ -334,12 +336,16 @@ document.getElementById('modalAutofillBtn').addEventListener('click', function()
 });
 
 document.getElementById('modalManualBtn').addEventListener('click', function() {
+    pendingAddVehicle = false;
     closeFuelPriceModal();
     document.getElementById('gasPrice').focus();
 });
 
 document.getElementById('fuelPriceModal').addEventListener('click', function(e) {
-    if (e.target === this) closeFuelPriceModal();
+    if (e.target === this) {
+        pendingAddVehicle = false;
+        closeFuelPriceModal();
+    }
 });
 
 // Selection Tabs
@@ -641,7 +647,12 @@ async function autofillFuelPrices() {
         document.getElementById('premiumGasPrice').value = prices.premium;
         document.getElementById('electricPrice').value = prices.electric;
         document.getElementById('dcFastPrice').value = prices.dcFast;
-        refreshIfVehicles();
+        if (pendingAddVehicle) {
+            pendingAddVehicle = false;
+            document.getElementById('addVehicleButton').click();
+        } else {
+            refreshIfVehicles();
+        }
         resetBtn(`2024 ${stateCode} Average Prices`);
     } catch (e) {
         resetBtn('Auto-fill Prices by Location');
