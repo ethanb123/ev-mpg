@@ -307,6 +307,14 @@ input, select, button {
   }
   
 
+.slider-group {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #f0f4f8;
+}
+
 .drive-mix-control {
     display: flex;
     align-items: center;
