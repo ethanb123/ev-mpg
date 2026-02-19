@@ -412,6 +412,14 @@ input, select, button {
     cursor: pointer;
 }
 
+.slider-box > input[type="range"] {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 5px 0 0 0;
+    cursor: pointer;
+}
+
 .mix-label {
     white-space: nowrap;
     font-size: 0.85em;
