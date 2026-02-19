@@ -350,7 +350,7 @@ function refreshIfVehicles() {
     updateLineChart();
 }
 
-['gasPrice', 'premiumGasPrice', 'electricPrice'].forEach(function(id) {
+['gasPrice', 'premiumGasPrice', 'electricPrice', 'dcFastPrice'].forEach(function(id) {
     document.getElementById(id).addEventListener('input', function() {
         refreshIfVehicles();
         const btn = document.getElementById('autofillPricesBtn');
@@ -524,34 +524,34 @@ function updateLineChart() {
     lineChart.updateOptions(lineOptions);
 }
 
-// State-level average fuel prices (EIA 2024 data, regular $/gal, premium $/gal, electric $/kWh)
+// State-level average fuel prices (EIA 2024 data, regular $/gal, premium $/gal, electric $/kWh; DC fast charge $/kWh from AAA)
 const STATE_PRICES = {
-    AK: { gas: 3.65, premium: 4.20, electric: 0.24 }, AL: { gas: 2.95, premium: 3.50, electric: 0.13 },
-    AR: { gas: 2.90, premium: 3.45, electric: 0.11 }, AZ: { gas: 3.45, premium: 4.00, electric: 0.13 },
-    CA: { gas: 4.70, premium: 5.25, electric: 0.27 }, CO: { gas: 3.25, premium: 3.80, electric: 0.14 },
-    CT: { gas: 3.45, premium: 4.00, electric: 0.28 }, DC: { gas: 3.30, premium: 3.85, electric: 0.14 },
-    DE: { gas: 3.05, premium: 3.60, electric: 0.14 }, FL: { gas: 3.20, premium: 3.75, electric: 0.14 },
-    GA: { gas: 2.90, premium: 3.45, electric: 0.13 }, HI: { gas: 4.80, premium: 5.35, electric: 0.39 },
-    IA: { gas: 3.00, premium: 3.55, electric: 0.12 }, ID: { gas: 3.35, premium: 3.90, electric: 0.11 },
-    IL: { gas: 3.50, premium: 4.05, electric: 0.15 }, IN: { gas: 3.15, premium: 3.70, electric: 0.14 },
-    KS: { gas: 2.95, premium: 3.50, electric: 0.13 }, KY: { gas: 2.95, premium: 3.50, electric: 0.12 },
-    LA: { gas: 2.90, premium: 3.45, electric: 0.10 }, MA: { gas: 3.25, premium: 3.80, electric: 0.26 },
-    MD: { gas: 3.15, premium: 3.70, electric: 0.16 }, ME: { gas: 3.30, premium: 3.85, electric: 0.22 },
-    MI: { gas: 3.20, premium: 3.75, electric: 0.17 }, MN: { gas: 3.10, premium: 3.65, electric: 0.14 },
-    MO: { gas: 2.90, premium: 3.45, electric: 0.12 }, MS: { gas: 2.85, premium: 3.40, electric: 0.13 },
-    MT: { gas: 3.25, premium: 3.80, electric: 0.12 }, NC: { gas: 3.00, premium: 3.55, electric: 0.12 },
-    ND: { gas: 3.05, premium: 3.60, electric: 0.12 }, NE: { gas: 3.05, premium: 3.60, electric: 0.11 },
-    NH: { gas: 3.15, premium: 3.70, electric: 0.25 }, NJ: { gas: 3.25, premium: 3.80, electric: 0.18 },
-    NM: { gas: 3.00, premium: 3.55, electric: 0.14 }, NV: { gas: 3.80, premium: 4.35, electric: 0.12 },
-    NY: { gas: 3.50, premium: 4.05, electric: 0.21 }, OH: { gas: 3.15, premium: 3.70, electric: 0.13 },
-    OK: { gas: 2.85, premium: 3.40, electric: 0.11 }, OR: { gas: 3.80, premium: 4.35, electric: 0.12 },
-    PA: { gas: 3.35, premium: 3.90, electric: 0.16 }, RI: { gas: 3.20, premium: 3.75, electric: 0.26 },
-    SC: { gas: 2.95, premium: 3.50, electric: 0.13 }, SD: { gas: 3.10, premium: 3.65, electric: 0.12 },
-    TN: { gas: 2.95, premium: 3.50, electric: 0.12 }, TX: { gas: 2.85, premium: 3.40, electric: 0.13 },
-    UT: { gas: 3.35, premium: 3.90, electric: 0.11 }, VA: { gas: 3.10, premium: 3.65, electric: 0.13 },
-    VT: { gas: 3.25, premium: 3.80, electric: 0.19 }, WA: { gas: 4.00, premium: 4.55, electric: 0.11 },
-    WI: { gas: 3.10, premium: 3.65, electric: 0.16 }, WV: { gas: 3.10, premium: 3.65, electric: 0.12 },
-    WY: { gas: 3.20, premium: 3.75, electric: 0.10 }
+    AK: { gas: 3.65, premium: 4.20, electric: 0.24, dcFast: 0.486 }, AL: { gas: 2.95, premium: 3.50, electric: 0.13, dcFast: 0.416 },
+    AR: { gas: 2.90, premium: 3.45, electric: 0.11, dcFast: 0.395 }, AZ: { gas: 3.45, premium: 4.00, electric: 0.13, dcFast: 0.411 },
+    CA: { gas: 4.70, premium: 5.25, electric: 0.27, dcFast: 0.427 }, CO: { gas: 3.25, premium: 3.80, electric: 0.14, dcFast: 0.342 },
+    CT: { gas: 3.45, premium: 4.00, electric: 0.28, dcFast: 0.392 }, DC: { gas: 3.30, premium: 3.85, electric: 0.14, dcFast: 0.373 },
+    DE: { gas: 3.05, premium: 3.60, electric: 0.14, dcFast: 0.340 }, FL: { gas: 3.20, premium: 3.75, electric: 0.14, dcFast: 0.395 },
+    GA: { gas: 2.90, premium: 3.45, electric: 0.13, dcFast: 0.409 }, HI: { gas: 4.80, premium: 5.35, electric: 0.39, dcFast: 0.502 },
+    IA: { gas: 3.00, premium: 3.55, electric: 0.12, dcFast: 0.323 }, ID: { gas: 3.35, premium: 3.90, electric: 0.11, dcFast: 0.423 },
+    IL: { gas: 3.50, premium: 4.05, electric: 0.15, dcFast: 0.409 }, IN: { gas: 3.15, premium: 3.70, electric: 0.14, dcFast: 0.383 },
+    KS: { gas: 2.95, premium: 3.50, electric: 0.13, dcFast: 0.257 }, KY: { gas: 2.95, premium: 3.50, electric: 0.12, dcFast: 0.394 },
+    LA: { gas: 2.90, premium: 3.45, electric: 0.10, dcFast: 0.477 }, MA: { gas: 3.25, premium: 3.80, electric: 0.26, dcFast: 0.365 },
+    MD: { gas: 3.15, premium: 3.70, electric: 0.16, dcFast: 0.331 }, ME: { gas: 3.30, premium: 3.85, electric: 0.22, dcFast: 0.394 },
+    MI: { gas: 3.20, premium: 3.75, electric: 0.17, dcFast: 0.343 }, MN: { gas: 3.10, premium: 3.65, electric: 0.14, dcFast: 0.353 },
+    MO: { gas: 2.90, premium: 3.45, electric: 0.12, dcFast: 0.280 }, MS: { gas: 2.85, premium: 3.40, electric: 0.13, dcFast: 0.409 },
+    MT: { gas: 3.25, premium: 3.80, electric: 0.12, dcFast: 0.398 }, NC: { gas: 3.00, premium: 3.55, electric: 0.12, dcFast: 0.376 },
+    ND: { gas: 3.05, premium: 3.60, electric: 0.12, dcFast: 0.379 }, NE: { gas: 3.05, premium: 3.60, electric: 0.11, dcFast: 0.302 },
+    NH: { gas: 3.15, premium: 3.70, electric: 0.25, dcFast: 0.443 }, NJ: { gas: 3.25, premium: 3.80, electric: 0.18, dcFast: 0.430 },
+    NM: { gas: 3.00, premium: 3.55, electric: 0.14, dcFast: 0.336 }, NV: { gas: 3.80, premium: 4.35, electric: 0.12, dcFast: 0.380 },
+    NY: { gas: 3.50, premium: 4.05, electric: 0.21, dcFast: 0.386 }, OH: { gas: 3.15, premium: 3.70, electric: 0.13, dcFast: 0.405 },
+    OK: { gas: 2.85, premium: 3.40, electric: 0.11, dcFast: 0.408 }, OR: { gas: 3.80, premium: 4.35, electric: 0.12, dcFast: 0.355 },
+    PA: { gas: 3.35, premium: 3.90, electric: 0.16, dcFast: 0.395 }, RI: { gas: 3.20, premium: 3.75, electric: 0.26, dcFast: 0.369 },
+    SC: { gas: 2.95, premium: 3.50, electric: 0.13, dcFast: 0.447 }, SD: { gas: 3.10, premium: 3.65, electric: 0.12, dcFast: 0.343 },
+    TN: { gas: 2.95, premium: 3.50, electric: 0.12, dcFast: 0.421 }, TX: { gas: 2.85, premium: 3.40, electric: 0.13, dcFast: 0.365 },
+    UT: { gas: 3.35, premium: 3.90, electric: 0.11, dcFast: 0.317 }, VA: { gas: 3.10, premium: 3.65, electric: 0.13, dcFast: 0.378 },
+    VT: { gas: 3.25, premium: 3.80, electric: 0.19, dcFast: 0.325 }, WA: { gas: 4.00, premium: 4.55, electric: 0.11, dcFast: 0.365 },
+    WI: { gas: 3.10, premium: 3.65, electric: 0.16, dcFast: 0.402 }, WV: { gas: 3.10, premium: 3.65, electric: 0.12, dcFast: 0.522 },
+    WY: { gas: 3.20, premium: 3.75, electric: 0.10, dcFast: 0.271 }
 };
 
 const STATE_NAME_TO_CODE = {
@@ -626,6 +626,7 @@ async function autofillFuelPrices() {
         document.getElementById('gasPrice').value = prices.gas;
         document.getElementById('premiumGasPrice').value = prices.premium;
         document.getElementById('electricPrice').value = prices.electric;
+        document.getElementById('dcFastPrice').value = prices.dcFast;
         refreshIfVehicles();
         resetBtn(`2024 ${stateCode} Average Prices`);
     } catch (e) {
