@@ -14,6 +14,16 @@ function getBlendedEfficiency(vehicle) {
     return city * (1 - hwPct) + highway * hwPct;
 }
 
+function updateMilesYearLabel() {
+    const val = parseInt(document.getElementById('milesYear').value);
+    document.getElementById('milesYearLabel').textContent = val.toLocaleString() + ' miles/year';
+}
+
+function updateYearsOwnershipLabel() {
+    const val = parseInt(document.getElementById('yearsOwnership').value);
+    document.getElementById('yearsOwnershipLabel').textContent = val + (val === 1 ? ' year' : ' years');
+}
+
 function updateDriveMixLabel() {
     const val = parseInt(document.getElementById('driveMixSlider').value);
     const cityPct = 100 - val;
@@ -32,8 +42,6 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
     if (!gasPrice) missingFields.push('Regular Gas Price');
     if (!premiumGasPrice) missingFields.push('Premium Gas Price');
     if (!electricPrice) missingFields.push('Electric Price');
-    if (!milesYear) missingFields.push('Miles per Year');
-    if (!yearsOwnership) missingFields.push('Years of Ownership');
 
     if (missingFields.length > 0) {
         alert('Please enter the following fields: \n' + missingFields.join(', '));
@@ -257,8 +265,18 @@ function refreshIfVehicles() {
     updateLineChart();
 }
 
-['gasPrice', 'premiumGasPrice', 'electricPrice', 'milesYear', 'yearsOwnership'].forEach(function(id) {
+['gasPrice', 'premiumGasPrice', 'electricPrice'].forEach(function(id) {
     document.getElementById(id).addEventListener('input', refreshIfVehicles);
+});
+
+document.getElementById('milesYear').addEventListener('input', function() {
+    updateMilesYearLabel();
+    refreshIfVehicles();
+});
+
+document.getElementById('yearsOwnership').addEventListener('input', function() {
+    updateYearsOwnershipLabel();
+    refreshIfVehicles();
 });
 
 document.getElementById('driveMixSlider').addEventListener('input', function() {

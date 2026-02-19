@@ -93,12 +93,14 @@
 
             <div class="input-field">
                 <span class="info-icon">Miles Driven Per Year</span>
-                <input type="number" id="milesYear" name="milesYear" placeholder="e.g., 12000" value="20000">
+                <input type="range" id="milesYear" name="milesYear" min="0" max="100000" step="1000" value="20000">
+                <div id="milesYearLabel" class="mix-pct-label">20,000 miles/year</div>
             </div>
 
             <div class="input-field">
                 <span class="info-icon">Number of Years of Ownership</span>
-                <input type="number" id="yearsOwnership" name="yearsOwnership" placeholder="e.g., 5" value="5">
+                <input type="range" id="yearsOwnership" name="yearsOwnership" min="0" max="20" step="1" value="5">
+                <div id="yearsOwnershipLabel" class="mix-pct-label">5 years</div>
             </div>
 
             <div class="input-field">
