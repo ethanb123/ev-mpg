@@ -383,10 +383,6 @@ document.getElementById('yearsOwnership').addEventListener('input', function() {
     refreshIfVehicles();
 });
 
-document.getElementById('chargingMixSlider').addEventListener('input', function() {
-    updateChargingMixLabel();
-    refreshIfVehicles();
-});
 
 document.getElementById('driveMixSlider').addEventListener('input', function() {
     updateDriveMixLabel();
