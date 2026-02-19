@@ -565,7 +565,7 @@ input[type="range"] {
     }
 
     #vehicleBox {
-        min-height: 3em;
+        min-height: 10em;
     }
 
     #vehicleList li {

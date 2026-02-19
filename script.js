@@ -270,27 +270,6 @@ function renderVehicleList() {
         listItem.appendChild(labelSpan);
         listItem.appendChild(badge);
 
-        const editButton = document.createElement('button');
-        editButton.textContent = 'Edit';
-        editButton.className = 'list-action-btn edit-btn';
-        editButton.onclick = (function(v, i) {
-            return function() {
-                const unit = v.type === 'electric' ? 'Mi/KWh' : 'MPG';
-                const newValue = prompt(`Enter new efficiency for ${displayName} (${unit}):`, v.efficiency);
-                if (newValue === null) return; // user cancelled
-                const parsed = parseFloat(newValue);
-                if (isNaN(parsed) || parsed <= 0) {
-                    alert('Please enter a valid positive number.');
-                    return;
-                }
-                vehicles[i].efficiency = parsed;
-                vehicles[i].city = parsed;
-                vehicles[i].highway = parsed;
-                renderVehicleList();
-                updateLineChart();
-            };
-        })(vehicle, index);
-
         const removeButton = document.createElement('button');
         removeButton.textContent = 'Remove';
         removeButton.className = 'list-action-btn remove-btn';
@@ -302,7 +281,6 @@ function renderVehicleList() {
             };
         })(index);
 
-        listItem.appendChild(editButton);
         listItem.appendChild(removeButton);
         vehicleList.appendChild(listItem);
     });
