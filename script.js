@@ -351,7 +351,13 @@ function refreshIfVehicles() {
 }
 
 ['gasPrice', 'premiumGasPrice', 'electricPrice'].forEach(function(id) {
-    document.getElementById(id).addEventListener('input', refreshIfVehicles);
+    document.getElementById(id).addEventListener('input', function() {
+        refreshIfVehicles();
+        const btn = document.getElementById('autofillPricesBtn');
+        if (btn && !btn.disabled) {
+            btn.textContent = 'Auto-fill Prices by Location';
+        }
+    });
 });
 
 document.getElementById('milesYear').addEventListener('input', function() {
