@@ -217,25 +217,16 @@ input, select, button {
         margin: auto;
         padding: 20px;
         display: grid;
-        /*grid-gap: 20px;*/
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: 
-            "rates vehicle-input vehicle-selection"
-            "usage vehicle-input vehicle-selection"
-            "charts charts charts";
+        grid-template-areas:
+            "vehicle rates usage"
+            "bottom  bottom bottom";
     }
 
-    #charts {
-        grid-area: charts;
-        display: flex;
-        justify-content: space-between;
+    #vehicleBox {
+        grid-area: vehicle;
     }
 
-    #lineChart, #chart {
-        flex-grow: 1;
-        width: 100%;
-    }
-    
     #ratesBox {
         grid-area: rates;
     }
@@ -244,12 +235,19 @@ input, select, button {
         grid-area: usage;
     }
 
-    #vehicleBox {
-        grid-area: vehicle-input;
+    #bottomRow {
+        grid-area: bottom;
+        display: flex;
+        gap: 1vw;
+        align-items: flex-start;
     }
 
     #vehicle2Box {
-        grid-area: vehicle-selection;
+        flex: 1;
+    }
+
+    #lineChart {
+        flex: 1;
     }
 }
 
@@ -345,7 +343,7 @@ input, select, button {
         flex-direction: column;
     }
 
-    #charts {
+    #bottomRow {
         display: flex;
         flex-direction: column;
     }

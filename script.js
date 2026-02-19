@@ -107,7 +107,6 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
 
     renderVehicleList();
     updateLineChart();
-    updateBarChart();
 });
 
 function renderVehicleList() {
@@ -181,7 +180,6 @@ function renderVehicleList() {
                         if (newName) vehicles[i].model = newName;
                         renderVehicleList();
                         updateLineChart();
-                        updateBarChart();
                     }
 
                     nameInput.addEventListener('blur', save);
@@ -218,7 +216,6 @@ function renderVehicleList() {
                 vehicles[i].highway = parsed;
                 renderVehicleList();
                 updateLineChart();
-                updateBarChart();
             };
         })(vehicle, index);
 
@@ -230,7 +227,6 @@ function renderVehicleList() {
                 vehicles.splice(i, 1);
                 renderVehicleList();
                 updateLineChart();
-                updateBarChart();
             };
         })(index);
 
@@ -259,7 +255,6 @@ function refreshIfVehicles() {
     if (vehicles.length === 0) return;
     renderVehicleList();
     updateLineChart();
-    updateBarChart();
 }
 
 ['gasPrice', 'premiumGasPrice', 'electricPrice', 'milesYear', 'yearsOwnership'].forEach(function(id) {
@@ -418,41 +413,6 @@ function updateLineChart() {
 
     lineChart.updateSeries(lineSeries);
     lineChart.updateOptions(lineOptions);
-}
-
-function updateBarChart() {
-    const gasPrice = parseFloat(document.getElementById('gasPrice').value);
-    const electricPrice = parseFloat(document.getElementById('electricPrice').value);
-
-    const vehicleEfficiencies = vehicles.map(function(vehicle) {
-        const blended = getBlendedEfficiency(vehicle);
-        if (vehicle.type === 'electric') {
-            return (blended / (electricPrice / gasPrice)).toFixed(2);
-        }
-        return blended.toFixed(1);
-    });
-
-    const labelColors = vehicles.map(function(vehicle) {
-        return vehicle.type === 'electric' ? '#1a7a1a' : '#000000';
-    });
-
-    chart.updateOptions({
-        colors: vehicles.map((_, i) => CHART_COLORS[i % CHART_COLORS.length]),
-        chart: {
-            type: 'bar',
-            height: '480px'
-        },
-        xaxis: {
-            categories: vehicles.map(v => v.model.split(' ').slice(0, 2).join(' ')),
-            labels: {
-                style: { colors: labelColors }
-            }
-        }
-    });
-
-    chart.updateSeries([{
-        data: vehicleEfficiencies
-    }]);
 }
 
 // State-level average fuel prices (EIA 2024 data, regular $/gal, premium $/gal, electric $/kWh)

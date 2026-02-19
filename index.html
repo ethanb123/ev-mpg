@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="EV-MPG is a web application that helps you compare the long-term costs of gasoline and electric vehicles."> 
+    <meta name="description" content="EV-MPG is a web application that helps you compare the long-term costs of gasoline and electric vehicles.">
     <title>EV-MPG</title>
     <link rel="stylesheet" href="styles.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3169574573261516"crossorigin="anonymous"></script>
@@ -24,8 +24,48 @@
 
 
     <div id="container">
-        
-        <!-- Rates Box -->
+
+        <!-- Vehicle Input Box (left) -->
+        <div class="box" id="vehicleBox">
+            <h1 id="vehicleInput">Vehicle Input</h1>
+            <div class="tab-container">
+                <span class="tab active-tab" onclick="showTab('automatic')">Automatic</span>
+                <span class="tab" onclick="showTab('manual')">Manual</span>
+            </div>
+
+            <div id="automatic" class="content-box">
+                <select id="year-select">
+                    <option>Select Year</option>
+                </select>
+                <select id="make-select">
+                    <option>Select Make</option>
+                </select>
+                <select id="model-select">
+                    <option>Select Model</option>
+                </select>
+                <div id="vehicleDetails" class="hidden">
+                    <label for="vehicleEfficiency">Fuel Efficiency (MPG or EV-MPG)</label>
+                    <input type="number" id="vehicleEfficiency" disabled>
+
+                    <label for="vehicleType">Fuel Type</label>
+                    <input type="text" id="vehicleType" disabled>
+                </div>
+            </div>
+
+            <div id="manual" class="content-box hidden">
+                <select id="vehicleTypeManual">
+                    <option value="" disabled selected>Select Fuel Type</option>
+                    <option value="gas">Regular Gas Vehicle</option>
+                    <option value="premium">Premium Gas Vehicle</option>
+                    <option value="electric">Electric Vehicle</option>
+                </select>
+                <input type="text" id="vehicleEfficiencyManual" placeholder="Input MPG or mi/kWh">
+            </div>
+
+            <button id="addVehicleButton">Add Vehicle</button>
+        </div>
+
+        <!-- Rates Box (middle) -->
         <div class="box" id="ratesBox">
             <h1>Fuel Prices</h1>
 
@@ -47,7 +87,7 @@
             <button id="autofillPricesBtn" onclick="autofillFuelPrices()">Auto-fill Prices by Location</button>
         </div>
 
-        <!-- Usage Box -->
+        <!-- Usage Box (right) -->
         <div class="box" id="usageBox">
             <h1>Vehicle Usage</h1>
 
@@ -71,122 +111,19 @@
                 <div id="driveMixLabel" class="mix-pct-label">50% City / 50% Highway</div>
             </div>
         </div>
-        
-        <!-- Vehicle Input Box -->
-        <div class="box" id="vehicleBox">
-            <h1 id="vehicleInput">Vehicle Input</h1>
-            <div class="tab-container">
-                <span class="tab active-tab" onclick="showTab('automatic')">Automatic</span>
-                <span class="tab" onclick="showTab('manual')">Manual</span>
-            </div>
-            
-            <div id="automatic" class="content-box">
-                <select id="year-select">
-                    <option>Select Year</option>
-                </select>
-                <select id="make-select">
-                    <option>Select Make</option>
-                </select>
-                <select id="model-select">
-                    <option>Select Model</option>
-                </select>
-                <div id="vehicleDetails" class="hidden">
-                    <label for="vehicleEfficiency">Fuel Efficiency (MPG or EV-MPG)</label>
-                    <input type="number" id="vehicleEfficiency" disabled>
 
-                    <label for="vehicleType">Fuel Type</label>
-                    <input type="text" id="vehicleType" disabled>
-                </div>
-            </div>
-            
-            <div id="manual" class="content-box hidden">
-                <select id="vehicleTypeManual">
-                    <option value="" disabled selected>Select Fuel Type</option>
-                    <option value="gas">Regular Gas Vehicle</option>
-                    <option value="premium">Premium Gas Vehicle</option>
-                    <option value="electric">Electric Vehicle</option>
-                </select>
-                <input type="text" id="vehicleEfficiencyManual" placeholder="Input MPG or mi/kWh">
-            </div>
-
-            <button id="addVehicleButton">Add Vehicle</button>
-        </div>
-        
-        <!-- Vehicle List Box -->
-        <div class="box" id="vehicle2Box">
-            <h2 style="font-size:28px">Selected Vehicles for Comparison</h2>
-            <ul style="list-style-type:none;" id="vehicleList"></ul>
-        </div>
-        
         <!-- Include the ApexCharts library -->
         <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
-        <!-- Charts Output -->
-        <div id="charts">
-            <div id="chart"></div>
+        <!-- Bottom Row: Vehicle List (left) + Cumulative Cost Chart (right) -->
+        <div id="bottomRow">
+            <div class="box" id="vehicle2Box">
+                <h2 style="font-size:28px">Selected Vehicles for Comparison</h2>
+                <ul style="list-style-type:none;" id="vehicleList"></ul>
+            </div>
+
             <div id="lineChart"></div>
         </div>
-
-        <script>
-            // Define chart options and series
-            var options = {
-                plotOptions: {
-                    bar: {
-                        distributed: true
-                    }
-                },
-                chart: {
-                    type: 'bar'
-                },
-                title: {
-                    text: 'Fuel Efficiency Comparison',
-                    align: 'center',
-                    offsetY: 35,
-                    style: {
-                      fontSize:  '2vw',
-                      fontWeight:  'bold',
-                    },
-                },
-                series: [{
-                    name: 'Vehicle Efficiency',
-                    data: [0, 0] // Initialize with no data
-                }],
-                xaxis: {
-                    labels: {
-                        style: {
-                            fontSize: '20px'
-                        }
-                    }
-                },
-                yaxis: {
-                    title: {
-                        text: 'Efficiency (MPG or EV-MPG)',
-                        style: {
-                            fontSize: '1vw'
-                        }
-                    },
-                    labels: {
-                        style: {
-                            fontSize: '1.5vw'
-                        }
-                    }
-                },
-                dataLabels: {
-                    enabled: true,
-                    style: {
-                        fontSize: '30px'
-                    }
-                },
-                //colors: ["#304758", "#eb8034"],
-                legend: {
-                    show: false
-                }
-            }
-
-            // Use the ApexCharts object to create a new chart
-            var chart = new ApexCharts(document.querySelector("#chart"), options);
-            chart.render();
-        </script>
 
         <script>
             // Define chart options and series
@@ -234,7 +171,7 @@
                     }
                 },
                 legend: {
-                    
+
                 }
             };
 
@@ -243,9 +180,9 @@
             lineChart.render();
         </script>
 
-        <script src="script.js"></script>         
+        <script src="script.js"></script>
         </div>
     </div>
-    
+
 </body>
 </html>
