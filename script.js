@@ -30,6 +30,19 @@ function updateDriveMixLabel() {
     document.getElementById('driveMixLabel').textContent = `${cityPct}% City / ${val}% Highway`;
 }
 
+function updateChargingMixLabel() {
+    const val = parseInt(document.getElementById('chargingMixSlider').value);
+    document.getElementById('chargingMixLabel').textContent = `${100 - val}% Home / ${val}% DC Fast`;
+}
+
+function getBlendedElectricPrice() {
+    const electricPrice = parseFloat(document.getElementById('electricPrice').value) || 0;
+    const dcFastRaw = parseFloat(document.getElementById('dcFastPrice').value);
+    const dcFastPrice = (isNaN(dcFastRaw) || dcFastRaw <= 0) ? electricPrice : dcFastRaw;
+    const dcFastPct = parseInt(document.getElementById('chargingMixSlider').value) / 100;
+    return (1 - dcFastPct) * electricPrice + dcFastPct * dcFastPrice;
+}
+
 document.getElementById('addVehicleButton').addEventListener('click', function() {
     const gasPrice = parseFloat(document.getElementById('gasPrice').value);
     const premiumGasPrice = parseFloat(document.getElementById('premiumGasPrice').value);
@@ -121,7 +134,7 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
 
 function renderVehicleList() {
     const gasPrice = parseFloat(document.getElementById('gasPrice').value);
-    const electricPrice = parseFloat(document.getElementById('electricPrice').value);
+    const electricPrice = getBlendedElectricPrice();
     const vehicleList = document.getElementById('vehicleList');
     vehicleList.innerHTML = '';
     const noVehiclesMsg = document.getElementById('noVehiclesMsg');
@@ -370,6 +383,11 @@ document.getElementById('yearsOwnership').addEventListener('input', function() {
     refreshIfVehicles();
 });
 
+document.getElementById('chargingMixSlider').addEventListener('input', function() {
+    updateChargingMixLabel();
+    refreshIfVehicles();
+});
+
 document.getElementById('driveMixSlider').addEventListener('input', function() {
     updateDriveMixLabel();
     // Update efficiency preview if a model is currently selected
@@ -455,7 +473,7 @@ function updateLineChart() {
     const milesYear = document.getElementById('milesYear').value;
     const gasPrice = document.getElementById('gasPrice').value;
     const premiumGasPrice = document.getElementById('premiumGasPrice').value;
-    const electricPrice = document.getElementById('electricPrice').value;
+    const blendedElectricPrice = getBlendedElectricPrice();
 
     const lineSeries = vehicles.map(function(vehicle) {
         const data = [];
@@ -467,7 +485,7 @@ function updateLineChart() {
             } else if (vehicle.type === 'gas') {
                 cost = (milesYear / blended) * gasPrice * year;
             } else {
-                cost = (milesYear / blended) * electricPrice * year;
+                cost = (milesYear / blended) * blendedElectricPrice * year;
             }
             data.push(Math.round(cost));
         }
