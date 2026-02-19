@@ -52,9 +52,9 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
 
     // Rates and Usage Input Validation (exists)
     const missingFields = [];
-    if (!gasPrice) missingFields.push('Regular Gas Price');
-    if (!premiumGasPrice) missingFields.push('Premium Gas Price');
-    if (!electricPrice) missingFields.push('Electric Price');
+    if (!gasPrice) missingFields.push('Regular Gasoline');
+    if (!premiumGasPrice) missingFields.push('Premium Gasoline');
+    if (!electricPrice) missingFields.push('Home Price per kWh');
 
     if (missingFields.length > 0) {
         document.getElementById('fuelPriceModal').classList.remove('hidden');
@@ -63,9 +63,9 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
 
     // Rates and Usage Input Validation (Non-Negative)
     const invalidFields = [];
-    if (gasPrice <= 0) invalidFields.push('Regular Gas Price');
-    if (premiumGasPrice <= 0) invalidFields.push('Premium Gas Price');
-    if (electricPrice <= 0) invalidFields.push('Electric Price');
+    if (gasPrice <= 0) invalidFields.push('Regular Gasoline');
+    if (premiumGasPrice <= 0) invalidFields.push('Premium Gasoline');
+    if (electricPrice <= 0) invalidFields.push('Home Price per kWh');
     if (milesYear <= 0) invalidFields.push('Miles per Year');
     if (yearsOwnership <= 0) invalidFields.push('Years of Ownership');
 
