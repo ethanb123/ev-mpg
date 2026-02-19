@@ -614,6 +614,6 @@ async function autofillFuelPrices() {
     document.getElementById('premiumGasPrice').value = prices.premium;
     document.getElementById('electricPrice').value = prices.electric;
     refreshIfVehicles();
-    resetBtn(`Filled for ${stateCode} (2024 avg)`);
+    resetBtn(`2024 ${stateCode} Average Prices`);
 }
 
