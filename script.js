@@ -96,7 +96,8 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
         efficiency = parseFloat(vehicleEfficiencyManual.value);
         type = vehicleTypeManual.value;
         manualVehicleCount++;
-        model = `Manual Input #${manualVehicleCount}`;
+        const customName = document.getElementById('vehicleNameManual').value.trim();
+        model = customName || `Manual Input #${manualVehicleCount}`;
         city = efficiency;
         highway = efficiency;
     }
@@ -110,6 +111,7 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
     document.getElementById('vehicleEfficiency').value = '';
     document.getElementById('vehicleType').value = '';
     document.getElementById('vehicleDetails').classList.add('hidden');
+    document.getElementById('vehicleNameManual').value = '';
     document.getElementById('vehicleTypeManual').value = '';
     document.getElementById('vehicleEfficiencyManual').value = '';
 
@@ -165,6 +167,49 @@ function renderVehicleList() {
             badge.textContent = `${blended.toFixed(1)} MPG`;
             badge.classList.add(vehicle.type === 'premium' ? 'premium' : 'gas');
         }
+
+        // Make badge clickable for inline efficiency editing
+        badge.style.cursor = 'pointer';
+        badge.title = 'Click to edit efficiency';
+        badge.addEventListener('click', (function(v, i) {
+            return function() {
+                const unit = v.type === 'electric' ? 'mi/kWh' : 'MPG';
+                const input = document.createElement('input');
+                input.type = 'number';
+                input.value = v.efficiency;
+                input.min = '0.01';
+                input.step = 'any';
+                input.style.cssText = 'width:70px;font-size:0.9em;padding:2px 4px;margin:0;display:inline-block;text-align:center;';
+                const unitLabel = document.createElement('div');
+                unitLabel.style.fontSize = '0.75em';
+                unitLabel.textContent = unit;
+                badge.innerHTML = '';
+                badge.appendChild(input);
+                badge.appendChild(unitLabel);
+                input.focus();
+                input.select();
+
+                function save() {
+                    const parsed = parseFloat(input.value);
+                    if (!isNaN(parsed) && parsed > 0) {
+                        vehicles[i].efficiency = parsed;
+                        vehicles[i].city = parsed;
+                        vehicles[i].highway = parsed;
+                    }
+                    renderVehicleList();
+                    updateLineChart();
+                }
+
+                input.addEventListener('blur', save);
+                input.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter') input.blur();
+                    else if (e.key === 'Escape') {
+                        input.removeEventListener('blur', save);
+                        renderVehicleList();
+                    }
+                });
+            };
+        })(vehicle, index));
 
         const labelSpan = document.createElement('span');
         labelSpan.textContent = labelText;
