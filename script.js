@@ -44,7 +44,7 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
     if (!electricPrice) missingFields.push('Electric Price');
 
     if (missingFields.length > 0) {
-        alert('Please enter the following fields: \n' + missingFields.join(', '));
+        document.getElementById('fuelPriceModal').classList.remove('hidden');
         return;
     }
 
@@ -262,6 +262,25 @@ function renderVehicleList() {
     html += '</div><div class="list-legend-label">MPGe ← fuel efficiency scale</div>';
     legend.innerHTML = html;
 }
+
+// Fuel price modal
+function closeFuelPriceModal() {
+    document.getElementById('fuelPriceModal').classList.add('hidden');
+}
+
+document.getElementById('modalAutofillBtn').addEventListener('click', function() {
+    closeFuelPriceModal();
+    autofillFuelPrices();
+});
+
+document.getElementById('modalManualBtn').addEventListener('click', function() {
+    closeFuelPriceModal();
+    document.getElementById('gasPrice').focus();
+});
+
+document.getElementById('fuelPriceModal').addEventListener('click', function(e) {
+    if (e.target === this) closeFuelPriceModal();
+});
 
 // Selection Tabs
 var activeTab = 'automatic';
