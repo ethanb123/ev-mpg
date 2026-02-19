@@ -119,6 +119,14 @@ transform: translateY(-50%);
     grid-area: vehicle2;
 }
 
+#noVehiclesMsg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
 .outputBox {
     grid-area: output;
 }
