@@ -78,24 +78,30 @@
         <div class="box" id="ratesBox">
             <h1>Fuel Prices</h1>
 
-            <div class="input-field">
-                <span class="info-icon">Regular Gasoline</span>
-                <input type="number" id="gasPrice" name="gasPrice" placeholder="e.g., 3.48">
-            </div>
+            <div class="fuel-prices-row">
+                <div class="fuel-prices-cell">
+                    <div class="fuel-prices-header">Gasoline</div>
+                    <div class="input-field">
+                        <span class="info-icon">Regular</span>
+                        <input type="number" id="gasPrice" name="gasPrice" placeholder="e.g., 3.48">
+                    </div>
+                    <div class="input-field">
+                        <span class="info-icon">Premium</span>
+                        <input type="number" id="premiumGasPrice" name="premiumGasPrice" placeholder="e.g., 4.03">
+                    </div>
+                </div>
 
-            <div class="input-field">
-                <span class="info-icon">Premium Gasoline</span>
-                <input type="number" id="premiumGasPrice" name="premiumGasPrice" placeholder="e.g., 4.03">
-            </div>
-
-            <div class="input-field">
-                <span class="info-icon">Home Price per kWh</span>
-                <input type="number" id="electricPrice" name="gasPrice" placeholder="e.g., 0.19">
-            </div>
-
-            <div class="input-field">
-                <span class="info-icon">DC Fast Charger Price per kWh</span>
-                <input type="number" id="dcFastPrice" name="dcFastPrice" placeholder="e.g., 0.39">
+                <div class="fuel-prices-cell">
+                    <div class="fuel-prices-header">kWh</div>
+                    <div class="input-field">
+                        <span class="info-icon">Home</span>
+                        <input type="number" id="electricPrice" name="gasPrice" placeholder="e.g., 0.19">
+                    </div>
+                    <div class="input-field">
+                        <span class="info-icon">DC Fast</span>
+                        <input type="number" id="dcFastPrice" name="dcFastPrice" placeholder="e.g., 0.39">
+                    </div>
+                </div>
             </div>
 
             <button id="autofillPricesBtn" onclick="autofillFuelPrices()">Auto-fill Prices by Location</button>

@@ -407,6 +407,27 @@ input, select, button {
   }
   
 
+.fuel-prices-row {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.fuel-prices-cell {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px 10px;
+    background-color: #f9f9f9;
+}
+
+.fuel-prices-header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.95em;
+    margin-bottom: 4px;
+}
+
 .slider-box {
     border: 1px solid #ccc;
     border-radius: 8px;
