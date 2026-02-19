@@ -123,7 +123,8 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
     document.getElementById('year-select').value = 'Select Year';
     document.getElementById('make-select').innerHTML = '<option>Select Make</option>';
     document.getElementById('model-select').innerHTML = '<option>Select Model</option>';
-    document.getElementById('vehicleEfficiency').value = '';
+    document.getElementById('vehicleCityEfficiency').value = '';
+    document.getElementById('vehicleHighwayEfficiency').value = '';
     document.getElementById('vehicleType').value = '';
     document.getElementById('vehicleDetails').classList.add('hidden');
     document.getElementById('vehicleNameManual').value = '';
@@ -400,7 +401,8 @@ document.getElementById('driveMixSlider').addEventListener('input', function() {
         if (yearSel.value !== 'Select Year' && makeSel.value !== 'Select Make' && modelSel.value !== 'Select Model') {
             const vData = carData[yearSel.value][makeSel.value][modelSel.value];
             const hwPct = parseInt(this.value) / 100;
-            document.getElementById('vehicleEfficiency').value = parseFloat((vData.city * (1 - hwPct) + vData.highway * hwPct).toFixed(4));
+            document.getElementById('vehicleCityEfficiency').value = parseFloat(vData.city.toFixed(4));
+            document.getElementById('vehicleHighwayEfficiency').value = parseFloat(vData.highway.toFixed(4));
         }
     }
     refreshIfVehicles();
@@ -410,7 +412,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const yearSelect = document.getElementById('year-select');
     const makeSelect = document.getElementById('make-select');
     const modelSelect = document.getElementById('model-select');
-    const efficiencyOutput = document.getElementById('vehicleEfficiency');
+    const cityEfficiencyOutput = document.getElementById('vehicleCityEfficiency');
+    const highwayEfficiencyOutput = document.getElementById('vehicleHighwayEfficiency');
     const vehicleType = document.getElementById('vehicleType');
 
     fetch('Data/cars.json')
@@ -453,7 +456,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 const selectedModel = modelSelect.value;
                 const vehicle = data[selectedYear][selectedMake][selectedModel];
                 const hwPct = parseInt(document.getElementById('driveMixSlider').value) / 100;
-                efficiencyOutput.value = parseFloat((vehicle.city * (1 - hwPct) + vehicle.highway * hwPct).toFixed(4));
+                cityEfficiencyOutput.value = parseFloat(vehicle.city.toFixed(4));
+                highwayEfficiencyOutput.value = parseFloat(vehicle.highway.toFixed(4));
                 const ft = vehicle.fuelType.toLowerCase();
                 if (ft.includes('electric')) {
                     vehicleType.value = 'electric';

@@ -44,8 +44,16 @@
                     <option>Select Model</option>
                 </select>
                 <div id="vehicleDetails" class="hidden">
-                    <label for="vehicleEfficiency">Fuel Efficiency (MPG or mi/kWh)</label>
-                    <input type="number" id="vehicleEfficiency" disabled>
+                    <div class="efficiency-row">
+                        <div class="efficiency-cell">
+                            <label for="vehicleCityEfficiency">City (MPG or mi/kWh)</label>
+                            <input type="number" id="vehicleCityEfficiency" disabled>
+                        </div>
+                        <div class="efficiency-cell">
+                            <label for="vehicleHighwayEfficiency">Highway (MPG or mi/kWh)</label>
+                            <input type="number" id="vehicleHighwayEfficiency" disabled>
+                        </div>
+                    </div>
 
                     <label for="vehicleType">Fuel Type</label>
                     <input type="text" id="vehicleType" disabled>
