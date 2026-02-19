@@ -578,48 +578,58 @@ async function autofillFuelPrices() {
         btn.disabled = false;
     }
 
-    let coords;
     try {
-        const pos = await new Promise((resolve, reject) =>
-            navigator.geolocation.getCurrentPosition(resolve, reject, { timeout: 10000 })
-        );
-        coords = pos.coords;
-    } catch (e) {
-        resetBtn('Location denied — try again');
-        setTimeout(() => resetBtn('Auto-fill Prices by Location'), 3000);
-        return;
-    }
-
-    let stateCode;
-    try {
-        const resp = await fetch(
-            `https://nominatim.openstreetmap.org/reverse?lat=${coords.latitude}&lon=${coords.longitude}&format=json`,
-            { headers: { 'Accept': 'application/json', 'User-Agent': 'EV-MPG-App/1.0' } }
-        );
-        const geo = await resp.json();
-        const iso = geo.address && geo.address['ISO3166-2-lvl4'];
-        if (iso && iso.startsWith('US-')) {
-            stateCode = iso.slice(3);
-        } else {
-            stateCode = geo.address && STATE_NAME_TO_CODE[geo.address.state];
+        if (!navigator.geolocation) {
+            resetBtn('Location not supported');
+            setTimeout(() => resetBtn('Auto-fill Prices by Location'), 3000);
+            return;
         }
+
+        let coords;
+        try {
+            const pos = await new Promise((resolve, reject) =>
+                navigator.geolocation.getCurrentPosition(resolve, reject, { timeout: 10000 })
+            );
+            coords = pos.coords;
+        } catch (e) {
+            resetBtn('Location denied — try again');
+            setTimeout(() => resetBtn('Auto-fill Prices by Location'), 3000);
+            return;
+        }
+
+        let stateCode;
+        try {
+            const resp = await fetch(
+                `https://nominatim.openstreetmap.org/reverse?lat=${coords.latitude}&lon=${coords.longitude}&format=json`,
+                { headers: { 'Accept': 'application/json', 'User-Agent': 'EV-MPG-App/1.0' } }
+            );
+            const geo = await resp.json();
+            const iso = geo.address && geo.address['ISO3166-2-lvl4'];
+            if (iso && iso.startsWith('US-')) {
+                stateCode = iso.slice(3);
+            } else {
+                stateCode = geo.address && STATE_NAME_TO_CODE[geo.address.state];
+            }
+        } catch (e) {
+            resetBtn('Lookup failed — try again');
+            setTimeout(() => resetBtn('Auto-fill Prices by Location'), 3000);
+            return;
+        }
+
+        const prices = stateCode && STATE_PRICES[stateCode];
+        if (!prices) {
+            resetBtn('State not found — try again');
+            setTimeout(() => resetBtn('Auto-fill Prices by Location'), 3000);
+            return;
+        }
+
+        document.getElementById('gasPrice').value = prices.gas;
+        document.getElementById('premiumGasPrice').value = prices.premium;
+        document.getElementById('electricPrice').value = prices.electric;
+        refreshIfVehicles();
+        resetBtn(`2024 ${stateCode} Average Prices`);
     } catch (e) {
-        resetBtn('Lookup failed — try again');
-        setTimeout(() => resetBtn('Auto-fill Prices by Location'), 3000);
-        return;
+        resetBtn('Auto-fill Prices by Location');
     }
-
-    const prices = stateCode && STATE_PRICES[stateCode];
-    if (!prices) {
-        resetBtn('State not found — try again');
-        setTimeout(() => resetBtn('Auto-fill Prices by Location'), 3000);
-        return;
-    }
-
-    document.getElementById('gasPrice').value = prices.gas;
-    document.getElementById('premiumGasPrice').value = prices.premium;
-    document.getElementById('electricPrice').value = prices.electric;
-    refreshIfVehicles();
-    resetBtn(`2024 ${stateCode} Average Prices`);
 }
 
