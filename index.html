@@ -99,13 +99,21 @@
 
             <div class="slider-box">
                 <span class="info-icon slider-title">Miles Driven Per Year</span>
-                <input type="range" id="milesYear" name="milesYear" min="1000" max="100000" step="1000" value="20000">
+                <div class="drive-mix-control">
+                    <span class="mix-label">1,000 mi</span>
+                    <input type="range" id="milesYear" name="milesYear" min="1000" max="100000" step="1000" value="20000">
+                    <span class="mix-label">100,000 mi</span>
+                </div>
                 <div id="milesYearLabel" class="mix-pct-label">20,000 miles/year</div>
             </div>
 
             <div class="slider-box">
                 <span class="info-icon slider-title">Number of Years of Ownership</span>
-                <input type="range" id="yearsOwnership" name="yearsOwnership" min="1" max="20" step="1" value="5">
+                <div class="drive-mix-control">
+                    <span class="mix-label">1 yr</span>
+                    <input type="range" id="yearsOwnership" name="yearsOwnership" min="1" max="20" step="1" value="5">
+                    <span class="mix-label">20 yrs</span>
+                </div>
                 <div id="yearsOwnershipLabel" class="mix-pct-label">5 years</div>
             </div>
 
