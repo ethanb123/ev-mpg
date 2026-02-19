@@ -170,7 +170,7 @@ function renderVehicleList() {
         let labelText;
         if (vehicle.type === 'electric') {
             const evMPG = blended / (electricPrice / gasPrice);
-            labelText = `${index + 1}. ${displayName}`;
+            labelText = displayName;
             badge.classList.add('electric');
             const mpgeLine = document.createElement('div');
             mpgeLine.textContent = `${evMPG.toFixed(0)} MPGe`;
@@ -180,7 +180,7 @@ function renderVehicleList() {
             badge.appendChild(mpgeLine);
             badge.appendChild(mikwhLine);
         } else {
-            labelText = `${index + 1}. ${displayName}`;
+            labelText = displayName;
             badge.textContent = `${blended.toFixed(1)} MPG`;
             badge.classList.add(vehicle.type === 'premium' ? 'premium' : 'gas');
         }
