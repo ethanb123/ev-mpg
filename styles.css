@@ -272,7 +272,7 @@ input, select, button {
         grid-area: bottom;
         display: flex;
         gap: 1vw;
-        align-items: flex-start;
+        align-items: stretch;
     }
 
     #vehicle2Box {
