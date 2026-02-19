@@ -103,6 +103,10 @@ transform: translateY(-50%);
     margin: 0.5vw;
 }
 
+.box h1, .box h2 {
+    text-align: center;
+}
+
 #ratesBox {
     grid-area: rates;
 }

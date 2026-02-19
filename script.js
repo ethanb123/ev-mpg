@@ -124,6 +124,8 @@ function renderVehicleList() {
     const electricPrice = parseFloat(document.getElementById('electricPrice').value);
     const vehicleList = document.getElementById('vehicleList');
     vehicleList.innerHTML = '';
+    const noVehiclesMsg = document.getElementById('noVehiclesMsg');
+    noVehiclesMsg.style.display = vehicles.length === 0 ? 'block' : 'none';
 
     // Pre-compute display efficiency (MPGe) for each vehicle to size the bars
     const displayEfficiencies = vehicles.map(vehicle => {
