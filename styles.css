@@ -141,6 +141,28 @@ label {
     margin-top: 10px;
 }
 
+.price-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.price-input-wrapper::before {
+    content: "$";
+    position: absolute;
+    left: 10px;
+    color: #333;
+    pointer-events: none;
+    font-size: 1em;
+    z-index: 1;
+}
+
+.price-input-wrapper input {
+    padding-left: 22px !important;
+    margin-top: 0 !important;
+}
+
 input, select, button {
     margin-top: 5px;
     padding: 10px;

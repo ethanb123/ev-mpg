@@ -371,13 +371,24 @@ function refreshIfVehicles() {
     updateLineChart();
 }
 
+function formatPriceInput(input) {
+    const val = parseFloat(input.value);
+    if (!isNaN(val) && val >= 0) {
+        input.value = val.toFixed(2);
+    }
+}
+
 ['gasPrice', 'premiumGasPrice', 'electricPrice', 'dcFastPrice'].forEach(function(id) {
-    document.getElementById(id).addEventListener('input', function() {
+    const el = document.getElementById(id);
+    el.addEventListener('input', function() {
         refreshIfVehicles();
         const btn = document.getElementById('autofillPricesBtn');
         if (btn && !btn.disabled) {
             btn.textContent = 'Auto-fill Prices by Location';
         }
+    });
+    el.addEventListener('blur', function() {
+        formatPriceInput(this);
     });
 });
 
@@ -648,10 +659,10 @@ async function autofillFuelPrices() {
             return;
         }
 
-        document.getElementById('gasPrice').value = prices.gas;
-        document.getElementById('premiumGasPrice').value = prices.premium;
-        document.getElementById('electricPrice').value = prices.electric;
-        document.getElementById('dcFastPrice').value = prices.dcFast;
+        document.getElementById('gasPrice').value = prices.gas.toFixed(2);
+        document.getElementById('premiumGasPrice').value = prices.premium.toFixed(2);
+        document.getElementById('electricPrice').value = prices.electric.toFixed(2);
+        document.getElementById('dcFastPrice').value = prices.dcFast.toFixed(2);
         if (pendingAddVehicle) {
             pendingAddVehicle = false;
             document.getElementById('addVehicleButton').click();

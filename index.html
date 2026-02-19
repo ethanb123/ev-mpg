@@ -83,23 +83,31 @@
                     <div class="fuel-prices-header">Gasoline</div>
                     <div class="input-field">
                         <span class="info-icon">Regular</span>
-                        <input type="number" id="gasPrice" name="gasPrice" placeholder="e.g., 3.48">
+                        <div class="price-input-wrapper">
+                            <input type="text" id="gasPrice" name="gasPrice" placeholder="3.48">
+                        </div>
                     </div>
                     <div class="input-field">
                         <span class="info-icon">Premium</span>
-                        <input type="number" id="premiumGasPrice" name="premiumGasPrice" placeholder="e.g., 4.03">
+                        <div class="price-input-wrapper">
+                            <input type="text" id="premiumGasPrice" name="premiumGasPrice" placeholder="4.03">
+                        </div>
                     </div>
                 </div>
 
                 <div class="fuel-prices-cell">
-                    <div class="fuel-prices-header">kWh</div>
+                    <div class="fuel-prices-header">$/kWh</div>
                     <div class="input-field">
-                        <span class="info-icon">Home</span>
-                        <input type="number" id="electricPrice" name="gasPrice" placeholder="e.g., 0.19">
+                        <span class="info-icon">Home Charging</span>
+                        <div class="price-input-wrapper">
+                            <input type="text" id="electricPrice" name="gasPrice" placeholder="0.19">
+                        </div>
                     </div>
                     <div class="input-field">
-                        <span class="info-icon">DC Fast</span>
-                        <input type="number" id="dcFastPrice" name="dcFastPrice" placeholder="e.g., 0.39">
+                        <span class="info-icon">DC Fast Charging</span>
+                        <div class="price-input-wrapper">
+                            <input type="text" id="dcFastPrice" name="dcFastPrice" placeholder="0.39">
+                        </div>
                     </div>
                 </div>
             </div>
