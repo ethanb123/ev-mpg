@@ -91,14 +91,6 @@ input, select, button {
     position: relative;
 }
 
-#clearButton {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    width: 100px;
-    background-color: #269ffb;
-    border-radius: 8px;
-}
 
 #vehicleList li {
     display: flex;
@@ -160,8 +152,11 @@ input, select, button {
 }
 
 #addVehicleButton {
-    background-color: #269ffb;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 #autofillPricesBtn {
@@ -280,10 +275,6 @@ input, select, button {
     position: relative;
   }
   
-  /* Show the tooltip text when you mouse over the tooltip container */
-  .input-field:hover .tooltip {
-    display: block;
-  }
 
 .drive-mix-control {
     display: flex;

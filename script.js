@@ -537,10 +537,3 @@ async function autofillFuelPrices() {
     resetBtn(`Filled for ${stateCode} (2024 avg)`);
 }
 
-function showTooltip(id) {
-    const tooltip = document.getElementById(id);
-    tooltip.style.display = 'block';
-    setTimeout(function() {
-        tooltip.style.display = 'none';
-    }, 3000);
-}
