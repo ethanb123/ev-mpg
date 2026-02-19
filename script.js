@@ -115,14 +115,26 @@ function renderVehicleList() {
     const vehicleList = document.getElementById('vehicleList');
     vehicleList.innerHTML = '';
 
+    // Pre-compute display efficiency (MPGe) for each vehicle to size the bars
+    const displayEfficiencies = vehicles.map(vehicle => {
+        const blended = getBlendedEfficiency(vehicle);
+        if (vehicle.type === 'electric') {
+            const ratio = (electricPrice > 0 && gasPrice > 0) ? (electricPrice / gasPrice) : 1;
+            return blended / ratio;
+        }
+        return blended;
+    });
+    const maxEff = Math.max(...displayEfficiencies, 0.001);
+
     vehicles.forEach(function(vehicle, index) {
         const listItem = document.createElement('li');
         const isManual = vehicle.year === 'Select Year';
         const displayName = isManual ? vehicle.model : `${vehicle.make} ${vehicle.model}`;
 
         const color = CHART_COLORS[index % CHART_COLORS.length];
+        const barPct = (displayEfficiencies[index] / maxEff * 100).toFixed(1);
         listItem.style.border = `2px solid ${color}`;
-        listItem.style.backgroundColor = color + '22';
+        listItem.style.background = `linear-gradient(to right, ${color}33 ${barPct}%, #f5f5f5 ${barPct}%)`;
 
         const badge = document.createElement('div');
         badge.className = 'mpg-badge';
