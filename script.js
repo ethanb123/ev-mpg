@@ -364,7 +364,24 @@ function updateLineChart() {
                 text: 'Total Fuel Cost',
                 style: { fontSize: '20px' }
             },
-            labels: { style: { fontSize: '20px' } }
+            labels: {
+                style: { fontSize: '20px' },
+                formatter: function(val) {
+                    return '$' + Math.round(val).toLocaleString();
+                }
+            }
+        },
+        dataLabels: {
+            formatter: function(val) {
+                return '$' + val.toLocaleString();
+            }
+        },
+        tooltip: {
+            y: {
+                formatter: function(val) {
+                    return '$' + val.toLocaleString();
+                }
+            }
         },
         legend: { fontSize: '20px' },
     };
