@@ -161,6 +161,7 @@ label {
 .price-input-wrapper input {
     padding-left: 22px !important;
     margin-top: 0 !important;
+    font-size: 1em;
 }
 
 input, select, button {
