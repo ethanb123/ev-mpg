@@ -3,6 +3,43 @@ let manualVehicleCount = 0;
 let carData = null;
 let pendingAddVehicle = false;
 
+async function fetchVehicleImage(vehicle) {
+    if ('_imageUrl' in vehicle) return vehicle._imageUrl;
+    if (!vehicle.make || vehicle.year === 'Select Year') {
+        vehicle._imageUrl = null;
+        return null;
+    }
+    const query = `${vehicle.year} ${vehicle.make} ${vehicle.model}`;
+    try {
+        // Try direct title lookup first
+        const titleUrl = `https://en.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(query)}&prop=pageimages&format=json&pithumbsize=150&origin=*`;
+        const res = await fetch(titleUrl);
+        const data = await res.json();
+        const pages = Object.values(data.query.pages);
+        if (pages[0] && pages[0].thumbnail) {
+            vehicle._imageUrl = pages[0].thumbnail.source;
+            return vehicle._imageUrl;
+        }
+        // Fall back to Wikipedia search
+        const searchUrl = `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query)}&format=json&srlimit=1&origin=*`;
+        const sRes = await fetch(searchUrl);
+        const sData = await sRes.json();
+        if (sData.query.search.length > 0) {
+            const title = sData.query.search[0].title;
+            const imgUrl = `https://en.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(title)}&prop=pageimages&format=json&pithumbsize=150&origin=*`;
+            const iRes = await fetch(imgUrl);
+            const iData = await iRes.json();
+            const iPages = Object.values(iData.query.pages);
+            if (iPages[0] && iPages[0].thumbnail) {
+                vehicle._imageUrl = iPages[0].thumbnail.source;
+                return vehicle._imageUrl;
+            }
+        }
+    } catch (e) {}
+    vehicle._imageUrl = null;
+    return null;
+}
+
 const CHART_COLORS = [
     '#008FFB', '#00E396', '#FEB019', '#FF4560', '#775DD0',
     '#3D5475', '#546E7A', '#D4526E', '#8D5B4C', '#F86624'
@@ -265,6 +302,18 @@ function renderVehicleList() {
                 };
             })(index, index);
         }
+
+        const vehicleImg = document.createElement('img');
+        vehicleImg.className = 'vehicle-thumb';
+        vehicleImg.alt = '';
+        vehicleImg.style.display = 'none';
+        listItem.appendChild(vehicleImg);
+        fetchVehicleImage(vehicle).then(function(url) {
+            if (url) {
+                vehicleImg.src = url;
+                vehicleImg.style.display = '';
+            }
+        });
 
         listItem.appendChild(labelSpan);
         listItem.appendChild(badge);

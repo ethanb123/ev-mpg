@@ -177,6 +177,15 @@ input, select, button {
     flex: 1;
 }
 
+.vehicle-thumb {
+    width: 72px;
+    height: 44px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
 .mpg-badge {
     padding: 6px 12px;
     border-radius: 6px;
