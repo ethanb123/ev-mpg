@@ -14,13 +14,13 @@ body {
 #topbar {
     margin: auto;
     text-align: center;
-    padding-top: 5vh;
+    padding-top: 0;
     background-color: #269ffb;
     border-radius: 8px;
     width: 73%;
     margin-top: 15px;
     position: relative;
-    height: 12vw;
+    height: 6vw;
 }
 
 
