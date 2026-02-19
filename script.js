@@ -306,7 +306,7 @@ function renderVehicleList() {
             <div class="list-legend-val">${val}</div>
         </div>`;
     }
-    html += '</div><div class="list-legend-label">MPGe ← fuel efficiency scale</div>';
+    html += '</div><div class="list-legend-label">MPG/MPGe</div>';
     legend.innerHTML = html;
 }
 
