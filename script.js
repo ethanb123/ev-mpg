@@ -122,8 +122,12 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
 
     // Reset input fields
     document.getElementById('year-select').value = 'Select Year';
-    document.getElementById('make-select').innerHTML = '<option>Select Make</option>';
-    document.getElementById('model-select').innerHTML = '<option>Select Model</option>';
+    const makeSelectReset = document.getElementById('make-select');
+    makeSelectReset.innerHTML = '<option>Select Make</option>';
+    makeSelectReset.disabled = true;
+    const modelSelectReset = document.getElementById('model-select');
+    modelSelectReset.innerHTML = '<option>Select Model</option>';
+    modelSelectReset.disabled = true;
     document.getElementById('vehicleCityEfficiency').value = '';
     document.getElementById('vehicleHighwayEfficiency').value = '';
     document.getElementById('vehicleType').value = '';
@@ -419,26 +423,37 @@ document.addEventListener('DOMContentLoaded', function() {
 
             yearSelect.addEventListener('change', function() {
                 const selectedYear = yearSelect.value;
-                const makes = data[selectedYear];
                 makeSelect.innerHTML = '<option>Select Make</option>';
                 modelSelect.innerHTML = '<option>Select Model</option>';
+                modelSelect.disabled = true;
                 document.getElementById('vehicleDetails').classList.add('hidden');
+                if (selectedYear === 'Select Year') {
+                    makeSelect.disabled = true;
+                    return;
+                }
+                const makes = data[selectedYear];
                 for (const make in makes) {
                     let option = new Option(make, make);
                     makeSelect.add(option);
                 }
+                makeSelect.disabled = false;
             });
 
             makeSelect.addEventListener('change', function() {
                 const selectedYear = yearSelect.value;
                 const selectedMake = makeSelect.value;
-                const models = data[selectedYear][selectedMake];
                 modelSelect.innerHTML = '<option>Select Model</option>';
                 document.getElementById('vehicleDetails').classList.add('hidden');
+                if (selectedMake === 'Select Make') {
+                    modelSelect.disabled = true;
+                    return;
+                }
+                const models = data[selectedYear][selectedMake];
                 for (const model in models) {
                     let option = new Option(model, model);
                     modelSelect.add(option);
                 }
+                modelSelect.disabled = false;
             });
 
             modelSelect.addEventListener('change', function() {
