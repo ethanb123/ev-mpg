@@ -367,9 +367,22 @@ input, select, button {
     margin-bottom: 4px;
 }
 
-.efficiency-inputs input {
+.efficiency-input-group {
     flex: 1;
+    display: flex;
+    flex-direction: column;
     min-width: 0;
+}
+
+.efficiency-input-group label {
+    text-align: center;
+    margin-bottom: 2px;
+    font-size: 0.9em;
+}
+
+.efficiency-input-group input {
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .efficiency-row {

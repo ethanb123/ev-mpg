@@ -81,8 +81,14 @@
                     <option value="electric">Electric Vehicle</option>
                 </select>
                 <div class="efficiency-inputs">
-                    <input type="text" id="vehicleCityEfficiencyManual" placeholder="City MPG or mi/kWh">
-                    <input type="text" id="vehicleHighwayEfficiencyManual" placeholder="Highway MPG or mi/kWh">
+                    <div class="efficiency-input-group">
+                        <label for="vehicleCityEfficiencyManual">City</label>
+                        <input type="text" id="vehicleCityEfficiencyManual" placeholder="MPG">
+                    </div>
+                    <div class="efficiency-input-group">
+                        <label for="vehicleHighwayEfficiencyManual">Highway</label>
+                        <input type="text" id="vehicleHighwayEfficiencyManual" placeholder="MPG">
+                    </div>
                 </div>
                 <input type="text" id="vehicleNameManual" placeholder="Vehicle name (optional)">
             </div>

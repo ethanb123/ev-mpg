@@ -352,6 +352,12 @@ document.getElementById('vehicleHighwayEfficiencyManual').addEventListener('keyd
     if (e.key === 'Enter') document.getElementById('addVehicleButton').click();
 });
 
+document.getElementById('vehicleTypeManual').addEventListener('change', function() {
+    const unit = this.value === 'electric' ? 'mi/kWh' : 'MPG';
+    document.getElementById('vehicleCityEfficiencyManual').placeholder = unit;
+    document.getElementById('vehicleHighwayEfficiencyManual').placeholder = unit;
+});
+
 function refreshIfVehicles() {
     if (vehicles.length === 0) return;
     renderVehicleList();
