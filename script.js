@@ -379,8 +379,10 @@ function showTab(tab) {
     activeTab = tab;
 }
 
-document.getElementById('vehicleEfficiencyManual').addEventListener('keydown', function(e) {
-    if (e.key === 'Enter') document.getElementById('addVehicleButton').click();
+['vehicleCityEfficiencyManual', 'vehicleHighwayEfficiencyManual'].forEach(function(id) {
+    document.getElementById(id).addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') document.getElementById('addVehicleButton').click();
+    });
 });
 
 function refreshIfVehicles() {
