@@ -100,23 +100,22 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
         highway = vData.highway;
     } else {
         const vehicleTypeManual = document.getElementById('vehicleTypeManual');
-        const vehicleCityManual = document.getElementById('vehicleCityEfficiencyManual');
-        const vehicleHighwayManual = document.getElementById('vehicleHighwayEfficiencyManual');
+        const vehicleEfficiencyManual = document.getElementById('vehicleEfficiencyManual');
 
-        if (vehicleTypeManual.value === '' || vehicleCityManual.value === '' || vehicleHighwayManual.value === '') {
+        if (vehicleTypeManual.value === '' || vehicleEfficiencyManual.value === '') {
             alert('Please fill out all fields in the Manual tab.');
             return;
         }
 
         year = 'Select Year';
         make = 'Manual';
-        city = parseFloat(vehicleCityManual.value);
-        highway = parseFloat(vehicleHighwayManual.value);
-        efficiency = (city + highway) / 2;
+        efficiency = parseFloat(vehicleEfficiencyManual.value);
         type = vehicleTypeManual.value;
         manualVehicleCount++;
         const customName = document.getElementById('vehicleNameManual').value.trim();
         model = customName || `Manual Input #${manualVehicleCount}`;
+        city = efficiency;
+        highway = efficiency;
     }
 
     vehicles.push({ year, make, model, efficiency, type, city, highway });
@@ -135,8 +134,7 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
     document.getElementById('vehicleDetails').classList.add('hidden');
     document.getElementById('vehicleNameManual').value = '';
     document.getElementById('vehicleTypeManual').value = '';
-    document.getElementById('vehicleCityEfficiencyManual').value = '';
-    document.getElementById('vehicleHighwayEfficiencyManual').value = '';
+    document.getElementById('vehicleEfficiencyManual').value = '';
 
     renderVehicleList();
     updateLineChart();
@@ -199,74 +197,40 @@ function renderVehicleList() {
         badge.addEventListener('click', (function(v, i) {
             return function() {
                 const unit = v.type === 'electric' ? 'mi/kWh' : 'MPG';
-                const inputStyle = 'width:58px;font-size:0.9em;padding:2px 4px;margin:0;';
-                const rowStyle = 'display:flex;align-items:center;gap:3px;font-size:0.8em;margin-bottom:2px;';
-
-                const cityRow = document.createElement('div');
-                cityRow.style.cssText = rowStyle;
-                const cityLabel = document.createElement('span');
-                cityLabel.textContent = 'City:';
-                const cityInput = document.createElement('input');
-                cityInput.type = 'number';
-                cityInput.value = v.city;
-                cityInput.min = '0.01';
-                cityInput.step = 'any';
-                cityInput.style.cssText = inputStyle;
-                cityRow.appendChild(cityLabel);
-                cityRow.appendChild(cityInput);
-
-                const hwRow = document.createElement('div');
-                hwRow.style.cssText = rowStyle;
-                const hwLabel = document.createElement('span');
-                hwLabel.textContent = 'Hwy:';
-                const hwInput = document.createElement('input');
-                hwInput.type = 'number';
-                hwInput.value = v.highway;
-                hwInput.min = '0.01';
-                hwInput.step = 'any';
-                hwInput.style.cssText = inputStyle;
-                hwRow.appendChild(hwLabel);
-                hwRow.appendChild(hwInput);
-
+                const input = document.createElement('input');
+                input.type = 'number';
+                input.value = v.efficiency;
+                input.min = '0.01';
+                input.step = 'any';
+                input.style.cssText = 'width:70px;font-size:0.9em;padding:2px 4px;margin:0;display:inline-block;text-align:center;';
                 const unitLabel = document.createElement('div');
                 unitLabel.style.fontSize = '0.75em';
                 unitLabel.textContent = unit;
-
                 badge.innerHTML = '';
-                badge.appendChild(cityRow);
-                badge.appendChild(hwRow);
+                badge.appendChild(input);
                 badge.appendChild(unitLabel);
-                cityInput.focus();
-                cityInput.select();
+                input.focus();
+                input.select();
 
-                let escaped = false;
                 function save() {
-                    if (escaped) return;
-                    const parsedCity = parseFloat(cityInput.value);
-                    const parsedHw = parseFloat(hwInput.value);
-                    if (!isNaN(parsedCity) && parsedCity > 0) vehicles[i].city = parsedCity;
-                    if (!isNaN(parsedHw) && parsedHw > 0) vehicles[i].highway = parsedHw;
-                    vehicles[i].efficiency = (vehicles[i].city + vehicles[i].highway) / 2;
+                    const parsed = parseFloat(input.value);
+                    if (!isNaN(parsed) && parsed > 0) {
+                        vehicles[i].efficiency = parsed;
+                        vehicles[i].city = parsed;
+                        vehicles[i].highway = parsed;
+                    }
                     renderVehicleList();
                     updateLineChart();
                 }
 
-                cityInput.addEventListener('blur', function() {
-                    setTimeout(function() { if (document.activeElement !== hwInput) save(); }, 0);
-                });
-                hwInput.addEventListener('blur', function() {
-                    setTimeout(function() { if (document.activeElement !== cityInput) save(); }, 0);
-                });
-
-                function handleKeydown(e) {
-                    if (e.key === 'Enter') e.target.blur();
+                input.addEventListener('blur', save);
+                input.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter') input.blur();
                     else if (e.key === 'Escape') {
-                        escaped = true;
+                        input.removeEventListener('blur', save);
                         renderVehicleList();
                     }
-                }
-                cityInput.addEventListener('keydown', handleKeydown);
-                hwInput.addEventListener('keydown', handleKeydown);
+                });
             };
         })(vehicle, index));
 
@@ -379,10 +343,8 @@ function showTab(tab) {
     activeTab = tab;
 }
 
-['vehicleCityEfficiencyManual', 'vehicleHighwayEfficiencyManual'].forEach(function(id) {
-    document.getElementById(id).addEventListener('keydown', function(e) {
-        if (e.key === 'Enter') document.getElementById('addVehicleButton').click();
-    });
+document.getElementById('vehicleEfficiencyManual').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') document.getElementById('addVehicleButton').click();
 });
 
 function refreshIfVehicles() {
