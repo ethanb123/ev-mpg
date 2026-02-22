@@ -377,7 +377,7 @@ function formatPriceInput(input) {
         refreshIfVehicles();
         const btn = document.getElementById('autofillPricesBtn');
         if (btn && !btn.disabled) {
-            btn.textContent = 'Auto-fill Prices by Location';
+            btn.textContent = 'Use My Location';
         }
     });
     el.addEventListener('blur', function() {
@@ -623,7 +623,7 @@ async function autofillFuelPrices() {
     try {
         if (!navigator.geolocation) {
             resetBtn('Location not supported');
-            setTimeout(() => resetBtn('Auto-fill Prices by Location'), 3000);
+            setTimeout(() => resetBtn('Use My Location'), 3000);
             return;
         }
 
@@ -635,7 +635,7 @@ async function autofillFuelPrices() {
             coords = pos.coords;
         } catch (e) {
             resetBtn('Location denied — try again');
-            setTimeout(() => resetBtn('Auto-fill Prices by Location'), 3000);
+            setTimeout(() => resetBtn('Use My Location'), 3000);
             return;
         }
 
@@ -654,14 +654,14 @@ async function autofillFuelPrices() {
             }
         } catch (e) {
             resetBtn('Lookup failed — try again');
-            setTimeout(() => resetBtn('Auto-fill Prices by Location'), 3000);
+            setTimeout(() => resetBtn('Use My Location'), 3000);
             return;
         }
 
         const prices = stateCode && STATE_PRICES[stateCode];
         if (!prices) {
             resetBtn('State not found — try again');
-            setTimeout(() => resetBtn('Auto-fill Prices by Location'), 3000);
+            setTimeout(() => resetBtn('Use My Location'), 3000);
             return;
         }
 
@@ -677,7 +677,7 @@ async function autofillFuelPrices() {
         }
         resetBtn(`2024 ${stateCode} Average Prices`);
     } catch (e) {
-        resetBtn('Auto-fill Prices by Location');
+        resetBtn('Use My Location');
     }
 }
 
