@@ -100,22 +100,23 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
         highway = vData.highway;
     } else {
         const vehicleTypeManual = document.getElementById('vehicleTypeManual');
-        const vehicleEfficiencyManual = document.getElementById('vehicleEfficiencyManual');
+        const vehicleCityEfficiencyManual = document.getElementById('vehicleCityEfficiencyManual');
+        const vehicleHighwayEfficiencyManual = document.getElementById('vehicleHighwayEfficiencyManual');
 
-        if (vehicleTypeManual.value === '' || vehicleEfficiencyManual.value === '') {
+        if (vehicleTypeManual.value === '' || vehicleCityEfficiencyManual.value === '' || vehicleHighwayEfficiencyManual.value === '') {
             alert('Please fill out all fields in the Manual tab.');
             return;
         }
 
         year = 'Select Year';
         make = 'Manual';
-        efficiency = parseFloat(vehicleEfficiencyManual.value);
+        city = parseFloat(vehicleCityEfficiencyManual.value);
+        highway = parseFloat(vehicleHighwayEfficiencyManual.value);
+        efficiency = (city + highway) / 2;
         type = vehicleTypeManual.value;
         manualVehicleCount++;
         const customName = document.getElementById('vehicleNameManual').value.trim();
         model = customName || `Manual Input #${manualVehicleCount}`;
-        city = efficiency;
-        highway = efficiency;
     }
 
     vehicles.push({ year, make, model, efficiency, type, city, highway });
@@ -134,7 +135,8 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
     document.getElementById('vehicleDetails').classList.add('hidden');
     document.getElementById('vehicleNameManual').value = '';
     document.getElementById('vehicleTypeManual').value = '';
-    document.getElementById('vehicleEfficiencyManual').value = '';
+    document.getElementById('vehicleCityEfficiencyManual').value = '';
+    document.getElementById('vehicleHighwayEfficiencyManual').value = '';
 
     renderVehicleList();
     updateLineChart();
@@ -343,7 +345,10 @@ function showTab(tab) {
     activeTab = tab;
 }
 
-document.getElementById('vehicleEfficiencyManual').addEventListener('keydown', function(e) {
+document.getElementById('vehicleCityEfficiencyManual').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') document.getElementById('addVehicleButton').click();
+});
+document.getElementById('vehicleHighwayEfficiencyManual').addEventListener('keydown', function(e) {
     if (e.key === 'Enter') document.getElementById('addVehicleButton').click();
 });
 

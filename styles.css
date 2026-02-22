@@ -361,6 +361,17 @@ input, select, button {
     display: none;
 }
 
+.efficiency-inputs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.efficiency-inputs input {
+    flex: 1;
+    min-width: 0;
+}
+
 .efficiency-row {
     display: flex;
     gap: 8px;
