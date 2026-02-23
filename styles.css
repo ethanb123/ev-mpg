@@ -583,13 +583,50 @@ input[type="range"] {
 }
 
 .faq-item {
-    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    background-color: #fff;
+    overflow: hidden;
 }
 
-.faq-item h3 {
+.faq-item summary {
+    padding: 12px 16px;
+    font-weight: bold;
     font-size: 1em;
-    margin-bottom: 5px;
     color: #333;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: '+';
+    font-size: 1.2em;
+    color: #5cb85c;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.faq-item[open] summary::after {
+    content: '−';
+}
+
+.faq-item[open] summary {
+    border-bottom: 1px solid #ddd;
+}
+
+.faq-item p {
+    padding: 12px 16px;
+    margin: 0;
+    color: #555;
 }
 
 /* Footer */
