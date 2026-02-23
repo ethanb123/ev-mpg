@@ -181,7 +181,7 @@ function renderVehicleList() {
             labelText = displayName;
             badge.classList.add('electric');
             const mpgeLine = document.createElement('div');
-            mpgeLine.textContent = `${evMPG.toFixed(0)} MPGe`;
+            mpgeLine.textContent = `${evMPG.toFixed(0)} EV-MPG`;
             const mikwhLine = document.createElement('div');
             mikwhLine.className = 'badge-sub';
             mikwhLine.textContent = `${blended.toFixed(2)} mi/kWh`;
@@ -307,7 +307,7 @@ function renderVehicleList() {
             <div class="list-legend-val">${val}</div>
         </div>`;
     }
-    html += '</div><div class="list-legend-label">MPG/MPGe</div>';
+    html += '</div><div class="list-legend-label">MPG/EV-MPG</div>';
     legend.innerHTML = html;
 }
 
